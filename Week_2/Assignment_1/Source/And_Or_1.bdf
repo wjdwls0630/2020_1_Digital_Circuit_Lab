@@ -24,7 +24,7 @@ agreement for further details.
 	(input)
 	(rect -48 8 120 24)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "A[2..0]" (rect 5 0 72 12)(font "Arial" ))
+	(text "A[2..0]" (rect 5 0 71 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -366,14 +366,6 @@ agreement for further details.
 	(pt 416 248)
 )
 (connector
-	(pt 416 136)
-	(pt 352 136)
-)
-(connector
-	(pt 352 232)
-	(pt 392 232)
-)
-(connector
 	(pt 392 232)
 	(pt 392 264)
 )
@@ -382,28 +374,12 @@ agreement for further details.
 	(pt 464 264)
 )
 (connector
-	(pt 352 328)
-	(pt 392 328)
-)
-(connector
 	(pt 392 328)
 	(pt 392 280)
 )
 (connector
 	(pt 392 280)
 	(pt 464 280)
-)
-(connector
-	(pt 352 424)
-	(pt 416 424)
-)
-(connector
-	(pt 416 424)
-	(pt 416 296)
-)
-(connector
-	(pt 416 296)
-	(pt 464 296)
 )
 (connector
 	(pt 136 176)
@@ -625,6 +601,34 @@ agreement for further details.
 	(pt 560 232)
 	(pt 600 232)
 	(bus)
+)
+(connector
+	(text "AnBnCn" (rect 362 120 418 132)(font "Liberation Sans" ))
+	(pt 416 136)
+	(pt 352 136)
+)
+(connector
+	(text "AnBCn" (rect 362 216 409 228)(font "Liberation Sans" ))
+	(pt 352 232)
+	(pt 392 232)
+)
+(connector
+	(text "AnBnC" (rect 362 312 409 324)(font "Liberation Sans" ))
+	(pt 352 328)
+	(pt 392 328)
+)
+(connector
+	(text "AnBC" (rect 362 408 399 420)(font "Liberation Sans" ))
+	(pt 352 424)
+	(pt 416 424)
+)
+(connector
+	(pt 416 424)
+	(pt 416 296)
+)
+(connector
+	(pt 416 296)
+	(pt 464 296)
 )
 (junction (pt 48 176))
 (junction (pt 80 240))
