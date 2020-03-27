@@ -1,0 +1,5 @@
+module And_Or_1_tb();
+	reg [2:0] A;
+	wire [1:0] F;
+	
+	And_Or_1(A
