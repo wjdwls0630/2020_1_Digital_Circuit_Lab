@@ -1,0 +1,57 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(symbol
+	(rect 392 208 456 248)
+	(text "7408" (rect 1 0 34 11)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 29 36 40)(font "Arial" (font_size 6)))
+	(port
+		(pt 0 32)
+		(input)
+		(text "3" (rect 6 22 13 34)(font "Courier New" (bold))(invisible))
+		(text "3" (rect 6 22 13 34)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 8 32))
+	)
+	(port
+		(pt 0 16)
+		(input)
+		(text "2" (rect 6 6 13 18)(font "Courier New" (bold))(invisible))
+		(text "2" (rect 6 6 13 18)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 8 16))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "1" (rect 51 14 58 26)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 51 14 58 26)(font "Courier New" (bold))(invisible))
+		(line (pt 48 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 36)(pt 30 36))
+		(line (pt 42 24)(pt 48 24))
+		(line (pt 14 36)(pt 14 12))
+		(line (pt 4 32)(pt 14 32))
+		(line (pt 7 16)(pt 14 16))
+		(arc (pt 30 36)(pt 30 12)(rect 18 12 43 37))
+	)
+)

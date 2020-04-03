@@ -1,0 +1,18 @@
+module full_subtractor (
+  input [1:0] A,
+  input B_in,
+  output D,
+  output B_out
+  );
+  wire A_1_bar;
+  wire D_1;
+  wire and_1;
+  not(A_1_bar, A[1]);
+  xor(D_1, A[0], A[1]);
+  and(and_1, A_1_bar, A[0]);
+
+  xor(D, D_1, B_in);
+  and(and_2, A_1_bar, B_in);
+  and(and_3, A[0], B_in);
+  or(B_out, and_1, and_2, and_3);
+endmodule //full_subtractor

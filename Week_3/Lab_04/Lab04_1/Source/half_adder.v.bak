@@ -1,0 +1,10 @@
+module half_adder (
+  input [1:0] A,
+  output S,
+  output C
+  );
+
+  xor(S, A[0], A[1])
+  and(C, A[0], A[1])
+
+endmodule //half_adder

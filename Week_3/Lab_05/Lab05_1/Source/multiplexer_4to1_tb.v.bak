@@ -1,0 +1,31 @@
+module full_subtractor_tb ();
+  reg clk;
+  reg [5:0] r_counter;
+  wire [3:0] w_A;
+  wire [1:0] S;
+  initial begin
+    r_counter <= 6'b0;
+    clk <= 1'b0;
+  end
+
+  always begin
+    #10 clk <= ~clk;
+  end
+
+  always @ ( posedge clk ) begin
+    r_counter <= r_counter + 1'b1;
+  end
+
+  assign w_A = r_counter[5:2];
+  assign S = r_counter[1:0];
+
+  wire Y;
+  always @ ( Y ) begin
+    $monitor("%b", Y);
+  end
+  module multiplexer_4to1 (
+    .A(w_A),
+    .S(S),
+    .Y(Y)
+    );
+endmodule //half_adder_tb

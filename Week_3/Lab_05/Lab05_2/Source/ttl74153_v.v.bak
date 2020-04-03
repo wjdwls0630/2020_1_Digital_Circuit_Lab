@@ -1,0 +1,21 @@
+module ttl74153_v (
+  input [1:0] S,	// input [1:0] S_sig
+  input [3:0] A,	// input [3:0] A_sig
+  input [3:0] B,	// input [3:0] B_sig
+  input en_A_n,	// input  en_A_n_sig
+  input en_B_n,	// input  en_B_n_sig
+  output Y1,	// output  Y1_sig
+  output Y2 	// output  Y2_sig
+  );
+
+  TTL74153 TTL74153_inst
+  (
+  	.S(S) ,	// input [1:0] S_sig
+  	.A(A) ,	// input [3:0] A_sig
+  	.B(B) ,	// input [3:0] B_sig
+  	.en_A_n(en_A_n) ,	// input  en_A_n_sig
+  	.en_B_n(en_B_n) ,	// input  en_B_n_sig
+  	.Y1(Y1) ,	// output  Y1_sig
+  	.Y2(Y2) 	// output  Y2_sig
+  );
+endmodule //multiplexer_4to1

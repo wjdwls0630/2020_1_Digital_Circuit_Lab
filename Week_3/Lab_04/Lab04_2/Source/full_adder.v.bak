@@ -1,0 +1,24 @@
+module full_adder (
+  input [1:0] A,
+  input C_in,
+  output S,
+  output C_out
+  );
+
+  wire S_half;
+  wire C_half;
+  wire and_1;
+  wire and_2;
+  half_adder half_adder(
+    .A(A),
+    .S(S_half),
+    .C(C_half)
+    );
+
+  xor(S, S_half, C_in);
+
+  and(and_1, A[0], C_in);
+  and(and_2, A[1], C_in);
+  or(C_out, C_half, and_1, and_2);
+
+endmodule // full_adder

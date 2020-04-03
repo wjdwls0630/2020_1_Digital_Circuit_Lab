@@ -1,0 +1,8 @@
+module and_4in_v (
+  input A[3:0]
+  output Z
+  );
+
+  xor(Z, A[3], A[2], A[1], A[0]);
+
+endmodule //and_3in_v

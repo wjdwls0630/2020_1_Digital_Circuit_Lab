@@ -1,0 +1,30 @@
+module ttl74147_v_tb ();
+  reg clk;
+  reg [9:1] r_An;
+
+  initial begin
+    r_An <= 6'b0;
+    clk <= 1'b0;
+  end
+
+  always begin
+    #10 clk <= ~clk;
+  end
+
+  always @ ( posedge clk ) begin
+    r_An <= r_An + 1'b1;
+  end
+
+
+
+  wire [3:0] Zn;
+  always @ ( Y1 ) begin
+    $monitor("%b", Zn);
+  end
+
+  ttl74153_v ttl74153_v(
+    .An(r_An),
+    .Zn(Zn)
+    );
+
+endmodule //multiplexer_4to1_tb

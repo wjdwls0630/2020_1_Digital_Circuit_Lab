@@ -1,0 +1,30 @@
+module full_adder_tb ();
+  reg clk;
+  reg [2:0] r_counter;
+
+  initial begin
+    r_counter <= 3'b0;
+    clk <= 1'b0;
+  end
+
+  always begin
+    #10 clk <= ~clk;
+  end
+
+  always @ ( posedge clk ) begin
+    r_counter <= r_counter + 1'b1;
+  end
+
+  always @ ( S, C ) begin
+    $monitor("%b %b", S, C);
+  end
+
+  wire S;
+  wire C;
+  full_adder full_adder(
+    .A(r_counter[1:0]),
+    .C_in(r_counter[2]),
+    .S(S),
+    .C_out(C)
+    );
+endmodule //half_adder_tb
