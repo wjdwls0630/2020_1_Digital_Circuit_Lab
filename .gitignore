@@ -6,3 +6,6 @@ simulation
 *.qws
 *.qsf
 *.rpt
+./OpenXLSX
+./idea
+.DS_Store
