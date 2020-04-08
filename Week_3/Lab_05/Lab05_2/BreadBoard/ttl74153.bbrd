@@ -1,0 +1,51 @@
+<breadboard>
+  <setting key="numberOfBreadboards" value="4" />
+  <setting key="simulationSpeed" value="1" />
+  <setting key="positiveRailVoltage" value="5" />
+  <setting key="negativeRailVoltage" value="-5" />
+  <component ref="IC1" type="Integrated Circuit" startX="105" startY="150" angle="0" model="74153 4 to 1 multiplexor" />
+  <component ref="SW1" type="SPDT Switch" startX="135" startY="435" angle="0" state="True" />
+  <component ref="SW2" type="SPDT Switch" startX="180" startY="435" angle="0" state="False" />
+  <component ref="SW3" type="SPDT Switch" startX="225" startY="435" angle="0" state="False" />
+  <component ref="SW4" type="SPDT Switch" startX="270" startY="435" angle="0" state="True" />
+  <component ref="SW5" type="SPDT Switch" startX="495" startY="465" angle="0" state="False" />
+  <component ref="SW6" type="SPDT Switch" startX="540" startY="465" angle="0" state="True" />
+  <component ref="P1" type="Probe" startX="225" startY="195" angle="0" />
+  <wire startX="121" startY="421" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="211" startY="421" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="256" startY="421" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="166" startY="421" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="151" startY="481" length="9" orientation="vert" colour="#FF000000" />
+  <wire startX="196" startY="481" length="9" orientation="vert" colour="#FF000000" />
+  <wire startX="481" startY="421" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="526" startY="421" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="511" startY="481" length="9" orientation="vert" colour="#FF000000" />
+  <wire startX="556" startY="481" length="9" orientation="vert" colour="#FF000000" />
+  <wire startX="241" startY="481" length="9" orientation="vert" colour="#FF000000" />
+  <wire startX="286" startY="481" length="9" orientation="vert" colour="#FF000000" />
+  <wire startX="136" startY="421" length="17" orientation="horiz" colour="#FF7CFC00" />
+  <wire startX="181" startY="451" length="15" orientation="horiz" colour="#FFFF7F50" />
+  <wire startX="226" startY="466" length="13" orientation="horiz" colour="#FF7CFC00" />
+  <wire startX="271" startY="481" length="11" orientation="horiz" colour="#FFFF7F50" />
+  <wire startX="391" startY="436" length="-12" orientation="vert" colour="#FF7CFC00" />
+  <wire startX="406" startY="436" length="-12" orientation="vert" colour="#FFFF7F50" />
+  <wire startX="421" startY="451" length="-13" orientation="vert" colour="#FF7CFC00" />
+  <wire startX="436" startY="466" length="-14" orientation="vert" colour="#FFFF7F50" />
+  <wire startX="496" startY="256" length="13" orientation="vert" colour="#FFFF7F50" />
+  <wire startX="541" startY="151" length="20" orientation="vert" colour="#FFFFA500" />
+  <wire startX="211" startY="256" length="2" orientation="vert" colour="#FF000000" />
+  <wire startX="106" startY="256" length="2" orientation="vert" colour="#FF000000" />
+  <wire startX="106" startY="91" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="121" startY="91" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="196" startY="211" length="2" orientation="horiz" colour="#FF006400" />
+  <wire startX="181" startY="211" length="4" orientation="horiz" colour="#FFFF7F50" />
+  <wire startX="166" startY="226" length="6" orientation="horiz" colour="#FF7CFC00" />
+  <wire startX="151" startY="241" length="8" orientation="horiz" colour="#FFFF7F50" />
+  <wire startX="136" startY="256" length="10" orientation="horiz" colour="#FF7CFC00" />
+  <wire startX="241" startY="196" length="13" orientation="horiz" colour="#FFFF7F50" />
+  <wire startX="256" startY="211" length="11" orientation="horiz" colour="#FF7CFC00" />
+  <wire startX="271" startY="226" length="9" orientation="horiz" colour="#FFFF7F50" />
+  <wire startX="286" startY="241" length="7" orientation="horiz" colour="#FF7CFC00" />
+  <wire startX="496" startY="241" length="-25" orientation="horiz" colour="#FFFF7F50" />
+  <wire startX="541" startY="136" length="-27" orientation="horiz" colour="#FFFFA500" />
+</breadboard>

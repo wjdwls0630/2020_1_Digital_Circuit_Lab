@@ -451,6 +451,7 @@ LOGIC_NOT {r}.not13 {10} {r}.A8 {8} {16}
 
 
 
+
 </data>
 <label pin="1" name="A3b Input"/>
 <label pin="2" name="A4b Input"/>
