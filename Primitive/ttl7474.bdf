@@ -1,0 +1,216 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions
+and other software and tools, and its AMPP partner logic
+functions, and any output files from any of the foregoing
+(including device programming or simulation files), and any
+associated documentation or information are expressly subject
+to the terms and conditions of the Altera Program License
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other
+applicable license agreement, including, without limitation,
+that your use is for the sole purpose of programming logic
+devices manufactured by Altera and sold by Altera or its
+authorized distributors.  Please refer to the applicable
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 384 176 552 192)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "i_D" (rect 5 0 34 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 384 208 552 224)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "i_CLK" (rect 5 0 53 12)(font "Liberation Sans" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 624 176 800 192)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "o_Q" (rect 90 0 118 12)(font "Liberation Sans" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 632 208 808 224)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "o_Qn" (rect 90 0 127 12)(font "Liberation Sans" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 544 280 664 440)
+	(text "7474" (rect 46 1 97 19)(font "Arial" (font_size 10)))
+	(text "inst" (rect 3 149 36 160)(font "Arial" (font_size 6)))
+	(port
+		(pt 0 104)
+		(input)
+		(text "2D" (rect 19 99 40 114)(font "Arial" (font_size 8)))
+		(text "2D" (rect 19 99 40 114)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "2PRN" (rect 19 83 61 98)(font "Arial" (font_size 8)))
+		(text "2PRN" (rect 19 83 61 98)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 8 88))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "1CLK" (rect 19 67 61 82)(font "Arial" (font_size 8)))
+		(text "1CLK" (rect 19 67 61 82)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "1D" (rect 19 35 40 50)(font "Arial" (font_size 8)))
+		(text "1D" (rect 19 35 40 50)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "1PRN" (rect 19 19 61 34)(font "Arial" (font_size 8)))
+		(text "1PRN" (rect 19 19 61 34)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 8 24))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "2CLK" (rect 19 131 61 146)(font "Arial" (font_size 8)))
+		(text "2CLK" (rect 19 131 61 146)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 16 136))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "2CLRN" (rect 19 115 72 130)(font "Arial" (font_size 8)))
+		(text "2CLRN" (rect 19 115 72 130)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 8 120))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "1CLRN" (rect 19 51 72 66)(font "Arial" (font_size 8)))
+		(text "1CLRN" (rect 19 51 72 66)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 8 56))
+	)
+	(port
+		(pt 120 72)
+		(output)
+		(text "1QN" (rect 79 66 110 81)(font "Arial" (font_size 8)))
+		(text "1QN" (rect 81 66 112 81)(font "Arial" (font_size 8)))
+		(line (pt 112 72)(pt 120 72))
+	)
+	(port
+		(pt 120 88)
+		(output)
+		(text "2Q" (rect 87 82 108 97)(font "Arial" (font_size 8)))
+		(text "2Q" (rect 87 82 108 97)(font "Arial" (font_size 8)))
+		(line (pt 104 88)(pt 120 88))
+	)
+	(port
+		(pt 120 104)
+		(output)
+		(text "2QN" (rect 79 98 110 113)(font "Arial" (font_size 8)))
+		(text "2QN" (rect 79 98 110 113)(font "Arial" (font_size 8)))
+		(line (pt 112 104)(pt 120 104))
+	)
+	(port
+		(pt 120 56)
+		(output)
+		(text "1Q" (rect 87 50 108 65)(font "Arial" (font_size 8)))
+		(text "1Q" (rect 87 50 108 65)(font "Arial" (font_size 8)))
+		(line (pt 104 56)(pt 120 56))
+	)
+	(drawing
+		(text "D FLIP-FLOPS" (rect 29 147 156 162)(font "Arial" (font_size 8)))
+		(line (pt 16 144)(pt 16 16))
+		(line (pt 104 144)(pt 104 16))
+		(line (pt 16 16)(pt 104 16))
+		(line (pt 16 144)(pt 104 144))
+		(circle (rect 8 52 16 60))
+		(circle (rect 8 116 16 124))
+		(circle (rect 8 20 16 28))
+		(circle (rect 8 84 16 92))
+		(circle (rect 104 68 112 76))
+		(circle (rect 104 100 112 108))
+	)
+)
+(connector
+	(pt 432 320)
+	(pt 432 312)
+)
+(connector
+	(pt 440 352)
+	(pt 440 344)
+)
+(connector
+	(text "i_D" (rect 442 304 470 316)(font "Liberation Sans" ))
+	(pt 544 320)
+	(pt 432 320)
+)
+(connector
+	(text "i_CLK" (rect 450 336 497 348)(font "Liberation Sans" ))
+	(pt 544 352)
+	(pt 440 352)
+)
+(connector
+	(text "o_Q" (rect 674 320 702 332)(font "Liberation Sans" ))
+	(pt 664 336)
+	(pt 736 336)
+)
+(connector
+	(text "o_Qn" (rect 674 336 711 348)(font "Liberation Sans" ))
+	(pt 664 352)
+	(pt 744 352)
+)

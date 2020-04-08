@@ -1,0 +1,26 @@
+module ttl7474_top (
+  input i_D,
+  output o_Q,
+  output o_Qn,
+  input i_CLK
+  );
+
+  // RTL
+  ttl7474 ttl7474(
+    .i_D(i_D),
+    .o_Q(o_Q),
+    .o_Qn(o_Qn),
+    .i_CLK(i_CLK)
+    );
+
+  // modelsim
+  /*
+  ttl7474_v ttl7474(
+    .i_D(i_D),
+    .o_Q(o_Q),
+    .o_Qn(o_Qn),
+    .i_CLK(i_CLK)
+    );
+  */
+
+endmodule //ttl7474_top

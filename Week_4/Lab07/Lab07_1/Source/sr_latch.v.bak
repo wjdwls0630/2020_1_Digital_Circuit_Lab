@@ -1,0 +1,31 @@
+module sr_latch (
+  input i_S,
+  input i_R,
+  output o_Q,
+  output o_Qn
+  );
+
+  //RTL
+  nand_2in nand_2in_1(
+    .A({i_S, o_Qn}),
+    .Z(o_Q)
+    );
+
+  nand_2in nand_2in_1(
+    .A({i_R, o_Q}),
+    .Z(o_Qn)
+    );
+
+  // modelsim
+  /*
+  nand_2in_v nand_2in_1(
+    .A({i_S, o_Qn}),
+    .Z(o_Q)
+    );
+
+  nand_2in_v nand_2in_1(
+    .A({i_R, o_Q}),
+    .Z(o_Qn)
+    );
+  */
+endmodule //sr_latch

@@ -1,0 +1,61 @@
+module sr_latch_en (
+  input i_En,
+  input i_S,
+  input i_R,
+  output o_Q,
+  output o_Qn
+  );
+
+  //RTL
+  /*
+  wire w_and_1;
+  wire w_and_2;
+  and_2in and_2in_1(
+    .A({i_S, i_En}),
+    .Z(w_and_1)
+    );
+  and_2in and_2in_2(
+    .A({i_R, i_En}),
+    .Z(w_and_2)
+    );
+  wire w_nor_1;
+  wire w_nor_2;
+  assign o_Q = w_nor_1;
+  assign o_Qn = w_nor_2;
+  nor_2in nor_2in_1(
+    .A({w_and_1, w_nor_1}),
+    .Z(w_nor_2)
+    );
+
+  nor_2in nor_2in_2(
+    .A({w_and_2, w_nor_2}),
+    .Z(w_nor_1)
+    );
+	*/
+  // modelsim
+  
+  wire w_and_1;
+  wire w_and_2;
+  and_2in_v and_2in_1(
+    .A({i_S, i_En}),
+    .Z(w_and_1)
+    );
+  and_2in_v and_2in_2(
+    .A({i_R, i_En}),
+    .Z(w_and_2)
+    );
+  wire w_nor_1;
+  wire w_nor_2;
+  assign o_Q = w_nor_1;
+  assign o_Qn = w_nor_2;
+  nor_2in_v nor_2in_1(
+    .A({w_and_1, w_nor_1}),
+    .Z(w_nor_2)
+    );
+
+  nor_2in_v nor_2in_2(
+    .A({w_and_2, w_nor_2}),
+    .Z(w_nor_1)
+    );
+  
+endmodule //sr_latch
