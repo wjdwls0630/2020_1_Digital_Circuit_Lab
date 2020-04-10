@@ -3,17 +3,17 @@ module bits4_register_tb ();
   reg r_D;
 
   initial begin
-    r_D <= 1'b0;
+    r_D <= 1'bx;
     clk <= 1'b0;
-    #40 r_D <= 1'b1;
+    #25 r_D <= 1'b0;
+    #20 r_D <= 1'b1;
+    #15 r_D <= 1'b0;
+    #30 r_D <= 1'b1;
     #20 r_D <= 1'b0;
-	 #20 r_D <= 1'b0;
-	 #20 r_D <= 1'b1;
-	 #20 r_D <= 1'b1;
-	 #20 r_D <= 1'b1;
-	 #20 r_D <= 1'b0;
-	 #20 r_D <= 1'b0;
-	 #20 r_D <= 1'b1;
+    #20 r_D <= 1'b1;
+    #80 r_D <= 1'b0;
+    #20 r_D <= 1'b1;
+    #60 r_D <= 1'b0;
   end
 
   always begin

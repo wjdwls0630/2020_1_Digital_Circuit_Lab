@@ -3,7 +3,7 @@ module seg_decoder (
   output wire [6:0] o_Z
   );
   // RTL
-
+  /*
   wire w_Dn; // [3]
   wire w_Cn; // [2]
   wire w_Bn; // [1]
@@ -145,9 +145,9 @@ module seg_decoder (
     .A({w_and_2in_g_1, w_and_2in_g_2, i_A[3], w_and_2in_g_3}),
     .Z(o_Z[0])
     );
-
+  */
   // modelsim
-  /*
+  
   wire w_Dn; // [3]
   wire w_Cn; // [2]
   wire w_Bn; // [1]
@@ -289,7 +289,7 @@ module seg_decoder (
     .A({w_and_2in_g_1, w_and_2in_g_2, i_A[3], w_and_2in_g_3}),
     .Z(o_Z[0])
     );
-  */
+  
 
 
 endmodule //seg_decoder

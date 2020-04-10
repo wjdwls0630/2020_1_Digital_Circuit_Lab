@@ -1,4 +1,4 @@
-module sr_latch_tb ();
+module sr_latch_en_tb ();
   reg clk;
   reg [2:0] r_counter;
 
@@ -12,7 +12,7 @@ module sr_latch_tb ();
   end
 
   always @ ( posedge clk ) begin
-    if(r_counter == 3'b111) r_counter <= 3'b0;
+    if(r_counter == 3'b110) r_counter <= 3'b0;
     else r_counter <= r_counter + 1'b1;
   end
   wire w_En;

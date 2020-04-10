@@ -3,11 +3,12 @@ module ttl7474_top_tb ();
   reg r_D;
 
   initial begin
-    r_D <= 1'b0;
+    r_D <= 1'bx;
     clk <= 1'b0;
-    #40 r_D <= 1'b1;
+    #25 r_D <= 1'b0;
     #20 r_D <= 1'b1;
-    #20 r_D <= 1'b0;
+    #15 r_D <= 1'b0;
+    #30 r_D <= 1'b1;
     #20 r_D <= 1'b0;
   end
 
