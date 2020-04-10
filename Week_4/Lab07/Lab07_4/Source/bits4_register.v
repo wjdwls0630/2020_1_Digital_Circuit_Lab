@@ -47,7 +47,7 @@ module bits4_register (
   wire w_q2;
   wire w_q3;
 
-  assign o_Q = {w_q3, w_q2, w_q1, w_q0};
+  assign o_Q = {w_q0, w_q1, w_q2, w_q3};
   ttl7474_v ttl7474_1(
     .i_D(i_D),
     .o_Q(w_q0),
