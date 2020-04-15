@@ -1,0 +1,23 @@
+<breadboard>
+  <setting key="numberOfBreadboards" value="4" />
+  <setting key="simulationSpeed" value="1" />
+  <setting key="positiveRailVoltage" value="5" />
+  <setting key="negativeRailVoltage" value="-5" />
+  <component ref="SW1" type="SPDT Switch" startX="135" startY="435" angle="0" state="True" />
+  <component ref="SW2" type="SPDT Switch" startX="180" startY="435" angle="0" state="False" />
+  <component ref="IC1" type="Integrated Circuit" startX="240" startY="150" angle="0" model="4011 NAND" />
+  <component ref="P1" type="Probe" startX="285" startY="255" angle="0" />
+  <component ref="P2" type="Probe" startX="270" startY="255" angle="0" />
+  <wire startX="121" startY="421" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="166" startY="421" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="151" startY="481" length="9" orientation="vert" colour="#FF000000" />
+  <wire startX="196" startY="481" length="9" orientation="vert" colour="#FF000000" />
+  <wire startX="136" startY="421" length="-11" orientation="vert" colour="#FFFFFF00" />
+  <wire startX="181" startY="421" length="-11" orientation="vert" colour="#FFFFFF00" />
+  <wire startX="331" startY="256" length="2" orientation="vert" colour="#FF000000" />
+  <wire startX="241" startY="91" length="-2" orientation="vert" colour="#FFFF0000" />
+  <wire startX="181" startY="241" length="4" orientation="horiz" colour="#FFFFFF00" />
+  <wire startX="286" startY="211" length="-2" orientation="horiz" colour="#FF006400" />
+  <wire startX="136" startY="241" length="11" orientation="horiz" colour="#FFFFFF00" />
+  <wire startX="271" startY="226" length="3" orientation="horiz" colour="#FFFFA500" />
+</breadboard>
