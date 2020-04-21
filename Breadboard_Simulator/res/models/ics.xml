@@ -471,5 +471,232 @@ LOGIC_NOT {r}.not13 {10} {r}.A8 {8} {16}
 
 </model>
 
+<model name="74283 4 bit adder" category="Digital" footprint="DIP16">
+
+<data>LOGIC_XOR {r}.XX1 {r}.N032 {r}.N043 {4} {8} {16}
+LOGIC_NOR {r}.XX5 {r}.N004 {r}.N033 {r}.N047 {8} {16}
+LOGIC_NOR {r}.XX8 {r}.N045 {r}.N042 {9} {8} {16}
+LOGIC_NOT {r}.XX9 {r}.N009 {r}.N043 {8} {16}
+LOGIC_NOT {r}.XX10 {r}.N004 {r}.N023 {8} {16}
+LOGIC_AND {r}.XX11 {r}.N008 {r}.N023 {r}.N032 {8} {16}
+LOGIC_AND {r}.XX12 {r}.N008 {r}.N009 {r}.N033 {8} {16}
+LOGIC_AND {r}.XX13 {r}.N007 {r}.N024 {r}.N046 {8} {16}
+LOGIC_XOR {r}.XX2 {r}.N046 {r}.N047 {1} {8} {16}
+LOGIC_XOR {r}.XX3 {r}.N031 {r}.N049 {13} {8} {16}
+LOGIC_NOT {r}.XX14 {r}.N003 {r}.N024 {8} {16}
+LOGIC_OR {r}.XX15 {r}.N003 {r}.N038 {r}.N044 {8} {16}
+LOGIC_OR {r}.XX6 {r}.N028 {r}.N030 {r}.N038 {8} {16}
+LOGIC_NOT {r}.XX16 {r}.N044 {r}.N049 {8} {16}
+LOGIC_AND {r}.XX17 {r}.N007 {r}.N017 {r}.N030 {8} {16}
+LOGIC_AND {r}.XX18 {r}.N008 {r}.N009 {r}.N017 {8} {16}
+LOGIC_AND {r}.XX20 {r}.N004 {r}.N007 {r}.N028 {8} {16}
+LOGIC_AND {r}.XX21 {r}.N006 {r}.N018 {r}.N031 {8} {16}
+LOGIC_NOT {r}.XX22 {r}.N002 {r}.N018 {8} {16}
+LOGIC_XOR {r}.XX7 {r}.N034 {r}.N048 {10} {8} {16}
+LOGIC_OR {r}.XX23 {r}.N037 {r}.N036 {r}.N041 {8} {16}
+LOGIC_OR {r}.XX24 {r}.N027 {r}.N029 {r}.N036 {8} {16}
+LOGIC_NOT {r}.XX25 {r}.N041 {r}.N048 {8} {16}
+LOGIC_AND {r}.XX26 {r}.N019 {r}.N016 {r}.N029 {8} {16}
+LOGIC_AND {r}.XX27 {r}.N008 {r}.N009 {r}.N016 {8} {16}
+LOGIC_AND {r}.XX28 {r}.N006 {r}.N007 {r}.N019 {8} {16}
+LOGIC_AND {r}.XX29 {r}.N020 {r}.N007 {r}.N027 {8} {16}
+LOGIC_AND {r}.XX30 {r}.N005 {r}.N015 {r}.N034 {8} {16}
+LOGIC_NOT {r}.XX31 {r}.N001 {r}.N015 {8} {16}
+LOGIC_AND {r}.XX4 {r}.N004 {r}.N006 {r}.N020 {8} {16}
+LOGIC_OR {r}.XX19 {r}.N002 {r}.N026 {r}.N037 {8} {16}
+LOGIC_AND {r}.XX32 {r}.N003 {r}.N006 {r}.N026 {8} {16}
+LOGIC_OR {r}.XX34 {r}.N035 {r}.N039 {r}.N042 {8} {16}
+LOGIC_OR {r}.XX35 {r}.N001 {r}.N040 {r}.N045 {8} {16}
+LOGIC_OR {r}.XX36 {r}.N021 {r}.N025 {r}.N039 {8} {16}
+LOGIC_AND {r}.XX33 {r}.N013 {r}.N014 {r}.N025 {8} {16}
+LOGIC_AND {r}.XX37 {r}.N007 {r}.N010 {r}.N014 {8} {16}
+LOGIC_AND {r}.XX38 {r}.N005 {r}.N006 {r}.N013 {8} {16}
+LOGIC_AND {r}.XX39 {r}.N008 {r}.N009 {r}.N010 {8} {16}
+LOGIC_AND {r}.XX40 {r}.N012 {r}.N011 {r}.N021 {8} {16}
+LOGIC_AND {r}.XX41 {r}.N006 {r}.N007 {r}.N011 {8} {16}
+LOGIC_AND {r}.XX42 {r}.N004 {r}.N005 {r}.N012 {8} {16}
+LOGIC_AND {r}.XX43 {r}.N022 {r}.N006 {r}.N035 {8} {16}
+LOGIC_AND {r}.XX44 {r}.N003 {r}.N005 {r}.N022 {8} {16}
+LOGIC_AND {r}.XX45 {r}.N002 {r}.N005 {r}.N040 {8} {16}
+LOGIC_NOT {r}.XX46 {7} {r}.N009 {8} {16}
+LOGIC_NOR {r}.XX47 {6} {5} {r}.N004 {8} {16}
+LOGIC_NAND {r}.XX48 {6} {5} {r}.N008 {8} {16}
+LOGIC_NOR {r}.XX49 {2} {3} {r}.N003 {8} {16}
+LOGIC_NAND {r}.XX50 {2} {3} {r}.N007 {8} {16}
+LOGIC_NOR {r}.XX51 {15} {14} {r}.N002 {8} {16}
+LOGIC_NAND {r}.XX52 {15} {14} {r}.N006 {8} {16}
+LOGIC_NOR {r}.XX53 {11} {12} {r}.N001 {8} {16}
+LOGIC_NAND {r}.XX54 {11} {12} {r}.N005 {8} {16}
+</data>
+
+<label pin="1" name="S2 Output"/>
+<label pin="2" name="B2 Input"/>
+<label pin="3" name="A2 Input"/>
+<label pin="4" name="S1 Output"/>
+<label pin="5" name="A1 Input"/>
+<label pin="6" name="B1 Input"/>
+<label pin="7" name="Cin Input"/>
+<label pin="8" name="Ground"/>
+<label pin="9" name="Cout Output"/>
+<label pin="10" name="S4 Output"/>
+<label pin="11" name="B4 Input"/>
+<label pin="12" name="A4 Input"/>
+<label pin="13" name="S3 Output"/>
+<label pin="14" name="A3 Input"/>
+<label pin="15" name="B3 Input"/>
+<label pin="16" name="Supply"/>
+
+</model>
+
+<model name="74163 4 bit synchronous counter" category="Digital" footprint="DIP16">
+
+<data>LOGIC_DTYPE {r}.XX1 {r}.N006 {2} {8} {8} {14} {r}.N007 {8} {16}
+LOGIC_AND {r}.XX2 {r}.N007 {r}.N011 {r}.N009 {8} {16}
+LOGIC_AND {r}.XX3 {r}.KbA {14} {r}.N005 {8} {16}
+LOGIC_OR {r}.XX4 {r}.N009 {r}.N005 {r}.N006 {8} {16}
+LOGIC_NOT {r}.XX5 {r}.JbA {r}.N011 {8} {16}
+LOGIC_AND {r}.XX21 {14} {r}.N002 {r}.N001 {8} {16}
+LOGIC_AND {r}.XX22 {r}.N004 {r}.JbA {r}.N003 {8} {16}
+LOGIC_NOR {r}.XX23 {r}.N001 {r}.N003 {r}.KbA {8} {16}
+LOGIC_AND {r}.XX24 {r}.N008 {r}.N004 {r}.N010 {8} {16}
+LOGIC_AND {r}.XX25 {r}.N002 {r}.N007 {r}.N012 {8} {16}
+LOGIC_NOR {r}.XX26 {r}.N010 {r}.N012 {r}.JbA {8} {16}
+LOGIC_AND {r}.XX27 {3} {1} {r}.N008 {8} {16}
+LOGIC_AND {r}.XX28 {r}.N013 {r}.N002 {r}.N014 {8} {16}
+LOGIC_AND {r}.XX29 {r}.N004 {r}.JbB {r}.N015 {8} {16}
+LOGIC_NOR {r}.XX30 {r}.N014 {r}.N015 {r}.KbB {8} {16}
+LOGIC_AND {r}.XX31 {13} {14} {r}.N013 {8} {16}
+LOGIC_AND {r}.XX32 {r}.N018 {r}.N004 {r}.N021 {8} {16}
+LOGIC_AND {r}.XX33 {r}.N024 {r}.N020 {r}.N023 {8} {16}
+LOGIC_NOR {r}.XX34 {r}.N021 {r}.N023 {r}.JbB {8} {16}
+LOGIC_AND {r}.XX35 {4} {1} {r}.N018 {8} {16}
+LOGIC_AND {r}.XX36 {r}.N002 {14} {r}.N024 {8} {16}
+LOGIC_AND {r}.XX37 {r}.N028 {r}.N030 {r}.N029 {8} {16}
+LOGIC_AND {r}.XX38 {r}.N004 {r}.JbC {r}.N031 {8} {16}
+LOGIC_NOR {r}.XX39 {r}.N029 {r}.N031 {r}.KbC {8} {16}
+LOGIC_AND {r}.XX40 {12} {14} {r}.N028 {8} {16}
+LOGIC_AND {r}.XX41 {13} {r}.N002 {r}.N030 {8} {16}
+LOGIC_AND {r}.XX42 {r}.N036 {r}.N004 {r}.N038 {8} {16}
+LOGIC_AND {r}.XX43 {r}.N040 {r}.N041 {r}.N039 {8} {16}
+LOGIC_NOR {r}.XX44 {r}.N038 {r}.N039 {r}.JbC {8} {16}
+LOGIC_AND {r}.XX45 {5} {1} {r}.N036 {8} {16}
+LOGIC_AND {r}.XX46 {r}.N002 {14} {r}.N040 {8} {16}
+LOGIC_AND {r}.XX47 {13} {r}.N034 {r}.N041 {8} {16}
+LOGIC_AND {r}.XX48 {r}.N042 {r}.N045 {r}.N044 {8} {16}
+LOGIC_AND {r}.XX49 {r}.N004 {r}.JbD {r}.N046 {8} {16}
+LOGIC_NOR {r}.XX50 {r}.N044 {r}.N046 {r}.KbD {8} {16}
+LOGIC_AND {r}.XX51 {11} {r}.N043 {r}.N042 {8} {16}
+LOGIC_AND {r}.XX52 {12} {r}.N002 {r}.N045 {8} {16}
+LOGIC_AND {r}.XX53 {r}.N052 {r}.N004 {r}.N053 {8} {16}
+LOGIC_AND {r}.XX54 {r}.N056 {r}.N057 {r}.N054 {8} {16}
+LOGIC_NOR {r}.XX55 {r}.N053 {r}.N054 {r}.JbD {8} {16}
+LOGIC_AND {r}.XX56 {6} {1} {r}.N052 {8} {16}
+LOGIC_AND {r}.XX57 {r}.N002 {r}.N055 {r}.N056 {8} {16}
+LOGIC_AND {r}.XX58 {12} {r}.N050 {r}.N057 {8} {16}
+LOGIC_AND {r}.XX59 {14} {13} {r}.N043 {8} {16}
+LOGIC_AND {r}.XX60 {14} {13} {r}.N055 {8} {16}
+LOGIC_NOR {r}.XX61 {r}.N058 {r}.N059 {15} {8} {16}
+LOGIC_OR {r}.XX62 {r}.N050 {r}.N034 {r}.N058 {8} {16}
+LOGIC_OR {r}.XX63 {r}.N020 {r}.N060 {r}.N059 {8} {16}
+LOGIC_OR {r}.XX64 {r}.N007 {r}.N027 {r}.N060 {8} {16}
+LOGIC_DTYPE {r}.XX6 {r}.N017 {2} {8} {8} {13} {r}.N020 {8} {16}
+LOGIC_AND {r}.XX7 {r}.N020 {r}.N022 {r}.N019 {8} {16}
+LOGIC_AND {r}.XX8 {r}.KbB {13} {r}.N016 {8} {16}
+LOGIC_OR {r}.XX9 {r}.N019 {r}.N016 {r}.N017 {8} {16}
+LOGIC_NOT {r}.XX10 {r}.JbB {r}.N022 {8} {16}
+LOGIC_DTYPE {r}.XX11 {r}.N033 {2} {8} {8} {12} {r}.N034 {8} {16}
+LOGIC_AND {r}.XX12 {r}.N034 {r}.N037 {r}.N035 {8} {16}
+LOGIC_AND {r}.XX13 {r}.KbC {12} {r}.N032 {8} {16}
+LOGIC_OR {r}.XX14 {r}.N035 {r}.N032 {r}.N033 {8} {16}
+LOGIC_NOT {r}.XX15 {r}.JbC {r}.N037 {8} {16}
+LOGIC_DTYPE {r}.XX16 {r}.N048 {2} {8} {8} {11} {r}.N050 {8} {16}
+LOGIC_AND {r}.XX17 {r}.N050 {r}.N051 {r}.N049 {8} {16}
+LOGIC_AND {r}.XX18 {r}.KbD {11} {r}.N047 {8} {16}
+LOGIC_OR {r}.XX19 {r}.N049 {r}.N047 {r}.N048 {8} {16}
+LOGIC_NOT {r}.XX20 {r}.JbD {r}.N051 {8} {16}
+LOGIC_NOR {r}.XX65 {r}.N025 {r}.N027 {r}.N002 {8} {16}
+LOGIC_OR {r}.XX66 {r}.N026 {r}.N004 {r}.N025 {8} {16}
+LOGIC_NAND {r}.XX67 {1} {9} {r}.N004 {8} {16}
+LOGIC_NOT {r}.XX68 {7} {r}.N026 {8} {16}
+LOGIC_NOT {r}.XX69 {10} {r}.N027 {8} {16}
+</data>
+
+<label pin="1" name="MRb Input"/>
+<label pin="2" name="CP Input"/>
+<label pin="3" name="D0 Input"/>
+<label pin="4" name="D1 Input"/>
+<label pin="5" name="D2 Input"/>
+<label pin="6" name="D3 Input"/>
+<label pin="7" name="CEP Input"/>
+<label pin="8" name="Ground"/>
+<label pin="9" name="PEb Input"/>
+<label pin="10" name="CET Input"/>
+<label pin="11" name="Q3 Output"/>
+<label pin="12" name="Q2 Output"/>
+<label pin="13" name="Q1 Output"/>
+<label pin="14" name="Q0 Output"/>
+<label pin="15" name="TC Output"/>
+<label pin="16" name="Supply"/>
+
+</model>
+
+<model name="74165 8 bit shift register" category="Digital" footprint="DIP16">
+
+<data>LOGIC_DTYPE {r}.XX1 {r}.N009 {r}.N002 {r}.N032 {r}.N017 {9} {7} {8} {16}
+LOGIC_AND {r}.XX2 {r}.N040 {r}.N001 {r}.N017 {8} {16}
+LOGIC_AND {r}.XX3 {6} {r}.N001 {r}.N032 {8} {16}
+LOGIC_NOT {r}.XX4 {r}.N032 {r}.N040 {8} {16}
+LOGIC_DTYPE {r}.XX5 {r}.N008 {r}.N002 {r}.N031 {r}.N016 {r}.N009 {r}.N024 {8} {16}
+LOGIC_AND {r}.XX6 {r}.N039 {r}.N001 {r}.N016 {8} {16}
+LOGIC_AND {r}.XX7 {5} {r}.N001 {r}.N031 {8} {16}
+LOGIC_NOT {r}.XX8 {r}.N031 {r}.N039 {8} {16}
+LOGIC_DTYPE {r}.XX9 {r}.N007 {r}.N002 {r}.N030 {r}.N015 {r}.N008 {r}.N023 {8} {16}
+LOGIC_AND {r}.XX10 {r}.N038 {r}.N001 {r}.N015 {8} {16}
+LOGIC_AND {r}.XX11 {4} {r}.N001 {r}.N030 {8} {16}
+LOGIC_NOT {r}.XX12 {r}.N030 {r}.N038 {8} {16}
+LOGIC_DTYPE {r}.XX13 {r}.N006 {r}.N002 {r}.N029 {r}.N014 {r}.N007 {r}.N022 {8} {16}
+LOGIC_AND {r}.XX14 {r}.N037 {r}.N001 {r}.N014 {8} {16}
+LOGIC_AND {r}.XX15 {3} {r}.N001 {r}.N029 {8} {16}
+LOGIC_NOT {r}.XX16 {r}.N029 {r}.N037 {8} {16}
+LOGIC_DTYPE {r}.XX17 {r}.N005 {r}.N002 {r}.N028 {r}.N013 {r}.N006 {r}.N021 {8} {16}
+LOGIC_AND {r}.XX18 {r}.N036 {r}.N001 {r}.N013 {8} {16}
+LOGIC_AND {r}.XX19 {14} {r}.N001 {r}.N028 {8} {16}
+LOGIC_NOT {r}.XX20 {r}.N028 {r}.N036 {8} {16}
+LOGIC_DTYPE {r}.XX21 {r}.N004 {r}.N002 {r}.N027 {r}.N012 {r}.N005 {r}.N020 {8} {16}
+LOGIC_AND {r}.XX22 {r}.N035 {r}.N001 {r}.N012 {8} {16}
+LOGIC_AND {r}.XX23 {13} {r}.N001 {r}.N027 {8} {16}
+LOGIC_NOT {r}.XX24 {r}.N027 {r}.N035 {8} {16}
+LOGIC_DTYPE {r}.XX25 {r}.N003 {r}.N002 {r}.N026 {r}.N011 {r}.N004 {r}.N019 {8} {16}
+LOGIC_AND {r}.XX26 {r}.N034 {r}.N001 {r}.N011 {8} {16}
+LOGIC_AND {r}.XX27 {12} {r}.N001 {r}.N026 {8} {16}
+LOGIC_NOT {r}.XX28 {r}.N026 {r}.N034 {8} {16}
+LOGIC_DTYPE {r}.XX29 {10} {r}.N002 {r}.N025 {r}.N010 {r}.N003 {r}.N018 {8} {16}
+LOGIC_AND {r}.XX30 {r}.N033 {r}.N001 {r}.N010 {8} {16}
+LOGIC_AND {r}.XX31 {11} {r}.N001 {r}.N025 {8} {16}
+LOGIC_NOT {r}.XX32 {r}.N025 {r}.N033 {8} {16}
+LOGIC_OR {r}.XX33 {15} {2} {r}.N002 {8} {16}
+LOGIC_NOT {r}.XX34 {1} {r}.N001 {8} {16}
+</data>
+
+<label pin="1" name="PLb Input"/>
+<label pin="2" name="CP1 Input"/>
+<label pin="3" name="P4 Input"/>
+<label pin="4" name="P5 Input"/>
+<label pin="5" name="P6 Input"/>
+<label pin="6" name="P7 Input"/>
+<label pin="7" name="Q7b Output"/>
+<label pin="8" name="Ground"/>
+<label pin="9" name="Q7 Output"/>
+<label pin="10" name="DS Input"/>
+<label pin="11" name="P0 Output"/>
+<label pin="12" name="P1 Output"/>
+<label pin="13" name="P2 Output"/>
+<label pin="14" name="P3 Output"/>
+<label pin="15" name="CP2 Output"/>
+<label pin="16" name="Supply"/>
+
+</model>
+
+
 
 </models>
