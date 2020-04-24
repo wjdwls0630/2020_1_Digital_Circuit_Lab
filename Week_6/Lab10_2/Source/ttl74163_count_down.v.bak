@@ -1,0 +1,47 @@
+module ttl74163_count_down(
+  input CP,
+  input rstn,
+  input LTN,
+  input RBIN,
+  input BIN,
+  output [6:0] o_Z,
+  output RBON,
+  );
+  wire [3:0] w_Q;
+  ttl74163 ttl74163(
+    .PEn(rstn), // LDN Synchronous Load negative active
+    .CET(1'b1), // ENT Count Enable Trickle
+    .D(4'b0110), // D, C, B, A
+    .CEP(1'b1), // ENP Count Enable Parallel
+    .MRn(1'b1), // CLRN Synchronous Clear, negative active
+    .CP(CP), // CLK Rising Edge Trigger
+    .Q(w_Q), // QD, QC, QB, QA
+    .TC() // RCO Ripple Carry out
+  );
+  wire [3:0] w_not_Q;
+  not_2in not_2in_1(
+    A(w_Q[0]),
+    Z(w_not_Q[0])
+    );
+  not_2in not_2in_2(
+    A(w_Q[1]),
+    Z(w_not_Q[1])
+    );
+  not_2in not_2in_3(
+    A(w_Q[2]),
+    Z(w_not_Q[2])
+    );
+  not_2in not_2in_v_4(
+    A(w_Q[3]),
+    Z(w_not_Q[3])
+    );
+  ttl7447 ttl7447(
+    .i_A(w_not_Q),
+    .LTN(1'b1),
+    .RBIN(1'b1),
+    .BIN(1'b1),
+    .o_Z(o_Z)
+    .RBON()
+  );
+
+endmodule // ttl74163_count_down_v
