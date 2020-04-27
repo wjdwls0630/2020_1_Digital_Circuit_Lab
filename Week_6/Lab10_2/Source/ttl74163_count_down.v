@@ -47,38 +47,9 @@ module ttl74163_count_down(
     .LTN(LTN),
     .RBIN(RBIN),
     .BIN(BIN),
-    .o_Z(w_Z),
+    .o_Z(o_Z),
     .RBON(RBON)
   );
-  wire [6:0] w_not_Z;
-  assign o_Z = w_not_Z;
-  not_1in not_1in_5(
-    .A(w_Z[0]),
-    .Z(w_not_Z[0])
-    );
-  not_1in not_1in_6(
-    .A(w_Z[1]),
-    .Z(w_not_Z[1])
-    );
-  not_1in not_1in_7(
-    .A(w_Z[2]),
-    .Z(w_not_Z[2])
-    );
-  not_1in not_1in_8(
-    .A(w_Z[3]),
-    .Z(w_not_Z[3])
-    );
-  not_1in not_1in_9(
-    .A(w_Z[4]),
-    .Z(w_not_Z[4])
-    );
-  not_1in not_1in_10(
-    .A(w_Z[5]),
-    .Z(w_not_Z[5])
-    );
-  not_1in not_1in_11(
-    .A(w_Z[6]),
-    .Z(w_not_Z[6])
-    );
+  
 
 endmodule // ttl74163_count_down_v
