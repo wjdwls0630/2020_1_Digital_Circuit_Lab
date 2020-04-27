@@ -3,15 +3,16 @@ module ttl74163_count_down_v_tb ();
   reg rstn;
   initial begin
     CLK <= 1'b0;
-    rstn <= 1'b0;
+    rstn <= 1'b1;
   end
   always begin
     #10 CLK <= ~CLK; // 50MHz
   end
 
   initial begin
+    #10 rstn <= 1'b0;
     // after two clock
-    #30 rstn <= 1'b1;
+    #40 rstn <= 1'b1;
   end
 
   wire [6:0] o_Z;
