@@ -42,7 +42,7 @@ module ttl74163_count_down(
     .Z(w_not_Q[3])
     );
   wire [6:0] w_Z;
-  ttl7447 ttl7447(
+  ttl7448 ttl7448(
     .i_A(w_not_Q),
     .LTN(LTN),
     .RBIN(RBIN),
