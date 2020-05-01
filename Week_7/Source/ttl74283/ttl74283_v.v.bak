@@ -1,0 +1,45 @@
+module ttl74283_v (
+  input [3:0] A,
+  input [3:0] B,
+  input Cin,
+  output [3:0] S,
+  output Cout
+  );
+
+  wire w_C1;
+  wire w_C2;
+  wire w_C3;
+  wire w_C4;
+  full_adder_v full_adder_v_1(
+    .A(A[0]), // A , B
+    .B(B[0]),
+    .C_in(Cin),
+    .S(S[0]),
+    .C_out(w_C1)
+    );
+
+  full_adder_v full_adder_v_1(
+    .A(A[1]), // A , B
+    .B(B[1]),
+    .C_in(w_C1),
+    .S(S[1]),
+    .C_out(w_C2)
+    );
+
+  full_adder_v full_adder_v_1(
+    .A(A[2]), // A , B
+    .B(B[2]),
+    .C_in(w_C2),
+    .S(S[2]),
+    .C_out(w_C3)
+    );
+
+  full_adder_v full_adder_v_1(
+    .A(A[3]), // A , B
+    .B(B[3]),
+    .C_in(w_C3),
+    .S(S[3]),
+    .C_out(Cout)
+    );
+
+endmodule // ttl74283_v

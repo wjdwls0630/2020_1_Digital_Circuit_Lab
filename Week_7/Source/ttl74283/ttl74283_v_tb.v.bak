@@ -1,0 +1,29 @@
+module ttl74283_v_tb ();
+  reg [3:0] r_A;
+  reg [3:0] r_B;
+  reg r_Cin;
+  initial begin
+    r_A <= 4'b0101; // 5
+    r_B <= 4'b1100; //12
+    r_Cin <= 1'b1; // 1
+    r_An <= 9'b011111111;
+    #20 r_An <= 9'b101111111;
+    #20 r_An <= 9'b110111111;
+    #20 r_An <= 9'b111011111;
+    #20 r_An <= 9'b111101111;
+    #20 r_An <= 9'b111110111;
+    #20 r_An <= 9'b111111011;
+    #20 r_An <= 9'b111111101;
+    #20 r_An <= 9'b111111110;
+  end
+  wire [3:0] w_S;
+  wire w_Cout;
+  ttl74147_v ttl74147_v(
+    .A(r_A),
+    .B(r_B),
+    .Cin(r_Cin),
+    .S(w_S),
+    .Cout(w_Cout)
+    );
+
+endmodule //multiplexer_4to1_tb
