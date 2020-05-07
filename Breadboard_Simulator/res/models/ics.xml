@@ -50,13 +50,13 @@ RES {r}.R2 {2} {r}.inN res=1</data>
 
 
 <model name="TL074 Op-amp" category="Analog" footprint="DIP14">
-<data>OPAMP {r}a {r}.ainP {r}.ainN {1} {11} {4} rin=1e12 vosatp=1 vosatn=1 rout=20
+<data>OPAMP {r}a {r}.ainP {r}.ainN {1} {11} {4} rin=1e12 vosatp=1 vosatn=1 rout=20 
 RES {r}.R1a {3} {r}.ainP res=1
 RES {r}.R2a {2} {r}.ainN res=1
-OPAMP {r}b {r}.binP {r}.binN {7} {11} {4} rin=1e12 vosatp=1 vosatn=1 rout=20
+OPAMP {r}b {r}.binP {r}.binN {7} {11} {4} rin=1e12 vosatp=1 vosatn=1 rout=20 
 RES {r}.R1b {5} {r}.binP res=1
 RES {r}.R2b {6} {r}.binN res=1
-OPAMP {r}c {r}.cinP {r}.cinN {8} {11} {4} rin=1e12 vosatp=1 vosatn=1 rout=20
+OPAMP {r}c {r}.cinP {r}.cinN {8} {11} {4} rin=1e12 vosatp=1 vosatn=1 rout=20 
 RES {r}.R1c {10} {r}.cinP res=1
 RES {r}.R2c {9} {r}.cinN res=1
 OPAMP {r}d {r}.dinP {r}.dinN {14} {11} {4} rin=1e12 vosatp=1 vosatn=1 rout=20
@@ -78,16 +78,16 @@ RES {r}.R2d {13} {r}.dinN res=1</data>
 <label pin="14" name="Output 4"/>
 </model>
 <model name="LM324 Op-amp" category="Analog" footprint="DIP14">
-<data>OPAMP {r}a {r}.ainP {r}.ainN {1} {11} {4} rin=2e6 vosatp=1 vosatn=0 rout=20
+<data>OPAMP {r}a {r}.ainP {r}.ainN {1} {11} {4} rin=2e6 vosatp=1 vosatn=0 rout=20 
 RES {r}.R1a {3} {r}.ainP res=1
 RES {r}.R2a {2} {r}.ainN res=1
-OPAMP {r}b {r}.binP {r}.binN {7} {11} {4} rin=2e6 vosatp=1 vosatn=0 rout=20
+OPAMP {r}b {r}.binP {r}.binN {7} {11} {4} rin=2e6 vosatp=1 vosatn=0 rout=20 
 RES {r}.R1b {5} {r}.binP res=1
 RES {r}.R2b {6} {r}.binN res=1
-OPAMP {r}c {r}.cinP {r}.cinN {8} {11} {4} rin=2e6 vosatp=1 vosatn=0 rout=20
+OPAMP {r}c {r}.cinP {r}.cinN {8} {11} {4} rin=2e6 vosatp=1 vosatn=0 rout=20 
 RES {r}.R1c {10} {r}.cinP res=1
 RES {r}.R2c {9} {r}.cinN res=1
-OPAMP {r}d {r}.dinP {r}.dinN {14} {11} {4} rin=2e6 vosatp=1 vosatn=0 rout=20
+OPAMP {r}d {r}.dinP {r}.dinN {14} {11} {4} rin=2e6 vosatp=1 vosatn=0 rout=20 
 RES {r}.R1d {12} {r}.dinP res=1
 RES {r}.R2d {13} {r}.dinN res=1</data>
 <label pin="1" name="Output 1"/>
@@ -210,9 +210,9 @@ LOGIC_OR {r}d {13} {12} {11} {7} {14}</data>
 <label pin="14" name="Supply"/>
 </model>
 <model name="4081 AND" category="Digital" footprint="DIP14">
-<data>LOGIC_AND {r}a {1} {2} {3} {7} {14}
-LOGIC_AND {r}b {6} {5} {4} {7} {14}
-LOGIC_AND {r}c {8} {9} {10} {7} {14}
+<data>LOGIC_AND {r}a {1} {2} {3} {7} {14} 
+LOGIC_AND {r}b {6} {5} {4} {7} {14} 
+LOGIC_AND {r}c {8} {9} {10} {7} {14} 
 LOGIC_AND {r}d {13} {12} {11} {7} {14} </data>
 <label pin="1" name="Gate A Input 1"/>
 <label pin="2" name="Gate A Input 2"/>
@@ -231,7 +231,7 @@ LOGIC_AND {r}d {13} {12} {11} {7} {14} </data>
 </model>
 <!-- SEQUENTIAL LOGIC -->
 <model name="4013 D Flip Flop" category="Digital" footprint="DIP14">
-<data>LOGIC_DTYPE {r}a {5} {3} {6} {4} {1} {2} {7} {14}
+<data>LOGIC_DTYPE {r}a {5} {3} {6} {4} {1} {2} {7} {14} 
 LOGIC_DTYPE {r}b {9} {11} {8} {10} {13} {12} {7} {14}</data>
 <label pin="1" name="Gate A Output Q"/>
 <label pin="2" name="Gate A Output /Q"/>
@@ -307,6 +307,155 @@ LOGIC_DTYPE {r}b {9} {11} {8} {10} {13} {12} {7} {14}</data>
 </model>
 
 <!-- Custom Gates -->
+
+<model name="7400 (741G00) single NAND" category="Digital" footprint="DBV">
+<data>LOGIC_NAND {r}a {1} {2} {4} {3} {5}
+</data>
+<label pin="1" name="A Input"/>
+<label pin="2" name="B Input"/>
+<label pin="3" name="Ground"/>
+<label pin="4" name="Y Output"/>
+<label pin="5" name="Supply"/>
+</model>
+
+<model name="7400 (742G00) dual NAND" category="Digital" footprint="DIP8">
+<data>LOGIC_NAND {r}a {1} {2} {7} {4} {8}
+LOGIC_NAND {r}b {5} {6} {3} {4} {8}
+</data>
+<label pin="1" name="A1 Input"/>
+<label pin="2" name="B1 Input"/>
+<label pin="3" name="Y2 Output"/>
+<label pin="4" name="Ground"/>
+<label pin="5" name="A2 Input"/>
+<label pin="6" name="B2 Input"/>
+<label pin="7" name="Y1 Output"/>
+<label pin="8" name="Supply"/>
+</model>
+
+
+<model name="7402 (741G02) single NOR" category="Digital" footprint="DBV">
+<data>LOGIC_NOR {r}a {1} {2} {4} {3} {5}
+</data>
+<label pin="1" name="B Input"/>
+<label pin="2" name="A Input"/>
+<label pin="3" name="Ground"/>
+<label pin="4" name="Y Output"/>
+<label pin="5" name="Supply"/>
+</model>
+
+<model name="7402 (742G02) dual NOR" category="Digital" footprint="DIP8">
+<data>LOGIC_NOR {r}a {1} {2} {7} {4} {8}
+LOGIC_NOR {r}b {5} {6} {3} {4} {8}
+</data>
+<label pin="1" name="A1 Input"/>
+<label pin="2" name="B1 Input"/>
+<label pin="3" name="Y2 Output"/>
+<label pin="4" name="Ground"/>
+<label pin="5" name="A2 Input"/>
+<label pin="6" name="B2 Input"/>
+<label pin="7" name="Y1 Output"/>
+<label pin="8" name="Supply"/>
+</model>
+
+
+<model name="7404 (741G04) single NOT" category="Digital" footprint="DBV">
+<data>LOGIC_NOT {r}a {2} {4} {3} {5}
+</data>
+<label pin="1" name="NC"/>
+<label pin="2" name="A Input"/>
+<label pin="3" name="Ground"/>
+<label pin="4" name="Y Output"/>
+<label pin="5" name="Supply"/>
+</model>
+
+<model name="7404 (742G04) dual NOT" category="Digital" footprint="SOT363">
+<data>LOGIC_NOT {r}a {1} {6} {2} {5}
+LOGIC_NOT {r}b {3} {4} {2} {5}  
+</data>
+<label pin="1" name="A1 Input"/>
+<label pin="2" name="Ground"/>
+<label pin="3" name="A2 Input"/>
+<label pin="4" name="Y2 Output"/>
+<label pin="5" name="Supply"/>
+<label pin="6" name="Y1 Output"/>
+</model>
+
+<model name="7408 (741G08) single AND" category="Digital" footprint="DBV">
+<data>LOGIC_AND {r}a {1} {2} {4} {3} {5}
+</data>
+<label pin="1" name="A Input"/>
+<label pin="2" name="B Input"/>
+<label pin="3" name="Ground"/>
+<label pin="4" name="Y Output"/>
+<label pin="5" name="Supply"/>
+</model>
+
+<model name="7408 (742G08) dual AND" category="Digital" footprint="DIP8">
+<data>LOGIC_AND {r}a {1} {2} {7} {4} {8}
+LOGIC_AND {r}b {5} {6} {3} {4} {8}
+</data>
+<label pin="1" name="A1 Input"/>
+<label pin="2" name="B1 Input"/>
+<label pin="3" name="Y2 Output"/>
+<label pin="4" name="Ground"/>
+<label pin="5" name="A2 Input"/>
+<label pin="6" name="B2 Input"/>
+<label pin="7" name="Y1 Output"/>
+<label pin="8" name="Supply"/>
+</model>
+
+
+
+<model name="7432 (741G32) single OR" category="Digital" footprint="DBV">
+<data>LOGIC_OR {r}a {1} {2} {4} {3} {5}
+</data>
+<label pin="1" name="B Input"/>
+<label pin="2" name="A Input"/>
+<label pin="3" name="Ground"/>
+<label pin="4" name="Y Output"/>
+<label pin="5" name="Supply"/>
+</model>
+
+<model name="7432 (742G32) dual OR" category="Digital" footprint="DIP8">
+<data>LOGIC_OR {r}a {1} {2} {7} {4} {8}
+LOGIC_OR {r}b {5} {6} {3} {4} {8}
+</data>
+<label pin="1" name="A1 Input"/>
+<label pin="2" name="B1 Input"/>
+<label pin="3" name="Y2 Output"/>
+<label pin="4" name="Ground"/>
+<label pin="5" name="A2 Input"/>
+<label pin="6" name="B2 Input"/>
+<label pin="7" name="Y1 Output"/>
+<label pin="8" name="Supply"/>
+</model>
+
+
+<model name="7486 (741G86) single XOR" category="Digital" footprint="DBV">
+<data>LOGIC_XOR {r}a {1} {2} {4} {3} {5}
+</data>
+<label pin="1" name="A Input"/>
+<label pin="2" name="B Input"/>
+<label pin="3" name="Ground"/>
+<label pin="4" name="Y Output"/>
+<label pin="5" name="Supply"/>
+</model>
+
+<model name="7486 (742G86) dual XOR" category="Digital" footprint="DIP8">
+<data>LOGIC_XOR {r}a {1} {2} {7} {4} {8}
+LOGIC_XOR {r}b {5} {6} {3} {4} {8}
+</data>
+<label pin="1" name="A1 Input"/>
+<label pin="2" name="B1 Input"/>
+<label pin="3" name="Y2 Output"/>
+<label pin="4" name="Ground"/>
+<label pin="5" name="A2 Input"/>
+<label pin="6" name="B2 Input"/>
+<label pin="7" name="Y1 Output"/>
+<label pin="8" name="Supply"/>
+</model>
+
+
 
 <model name="74147 decoded decimal to BCD encoder" category="Digital" footprint="DIP16">
 <data>LOGIC_AND {r}.and5_1 {r}.and5_1_i1 {r}.and5_1_i2 {r}.and5_1_o {8} {16}
@@ -497,7 +646,7 @@ LOGIC_NOT {r}.XX21 {15} {r}.N004 {8} {16}
 LOGIC_NOT {r}.XX22 {r}.N001 {r}.N006 {8} {16}
 LOGIC_NOT {r}.XX23 {1} {r}.N001 {8} {16}
 </data>
-
+  
 <label pin="1" name="Select S Input"/>
 <label pin="2" name="A1 Input"/>
 <label pin="3" name="B1 Input"/>
@@ -542,7 +691,7 @@ LOGIC_NOT {r}.XX21 {15} {r}.N004 {8} {16}
 LOGIC_NOT {r}.XX22 {r}.N001 {r}.N006 {8} {16}
 LOGIC_NOT {r}.XX23 {1} {r}.N001 {8} {16}
 </data>
-
+  
 <label pin="1" name="Select S Input"/>
 <label pin="2" name="A1 Input"/>
 <label pin="3" name="B1 Input"/>
@@ -638,7 +787,7 @@ LOGIC_NAND {r}.XX67 {1} {9} {r}.N004 {8} {16}
 LOGIC_NOT {r}.XX68 {7} {r}.N026 {8} {16}
 LOGIC_NOT {r}.XX69 {10} {r}.N027 {8} {16}
 </data>
-
+  
 <label pin="1" name="MRb Input"/>
 <label pin="2" name="CP Input"/>
 <label pin="3" name="D0 Input"/>
@@ -671,7 +820,7 @@ LOGIC_DTYPE {r}.XX8 {12} {8} {7} {r}.N002 {13} {r}.NC_08 {7} {14}
 LOGIC_NOT {r}.XX9 {9} {r}.N002 {7} {14}
 LOGIC_AND {r}.XX10 {1} {2} {r}.N001 {7} {14}
 </data>
-
+  
 <label pin="1" name="A Input"/>
 <label pin="2" name="B Input"/>
 <label pin="3" name="QA Output"/>
@@ -729,7 +878,7 @@ LOGIC_NOT {r}.XX32 {r}.N025 {r}.N033 {8} {16}
 LOGIC_OR {r}.XX33 {15} {2} {r}.N002 {8} {16}
 LOGIC_NOT {r}.XX34 {1} {r}.N001 {8} {16}
 </data>
-
+  
 <label pin="1" name="PLb Input"/>
 <label pin="2" name="CP1 Input"/>
 <label pin="3" name="P4 Input"/>
@@ -759,7 +908,7 @@ LOGIC_DTYPE {r}.XX6 {14} {9} {8} {r}.N001 {15} {r}.NC_06 {8} {16}
 LOGIC_NOT {r}.XX9 {1} {r}.N001 {8} {16}
 </data>
 
-
+  
 <label pin="1" name="CLRb Input"/>
 <label pin="2" name="Q1 Output"/>
 <label pin="3" name="D1 Input"/>
@@ -780,16 +929,14 @@ LOGIC_NOT {r}.XX9 {1} {r}.N001 {8} {16}
 </model>
 
 <model name="74175 Quad D-Type Flip-Flops with clear" category="Digital" footprint="DIP16">
-<data>LOGIC_DTYPE {r}.XX1 {3} {9} {8} {r}.N001 {2} {r}.NC_01 {8} {16}
-LOGIC_DTYPE {r}.XX2 {4} {9} {8} {r}.N001 {5} {r}.NC_02 {8} {16}
-LOGIC_DTYPE {r}.XX3 {6} {9} {8} {r}.N001 {7} {r}.NC_03 {8} {16}
-LOGIC_DTYPE {r}.XX4 {11} {9} {8} {r}.N001 {10} {r}.NC_04 {8} {16}
-LOGIC_DTYPE {r}.XX5 {13} {9} {8} {r}.N001 {12} {r}.NC_05 {8} {16}
-LOGIC_DTYPE {r}.XX6 {14} {9} {8} {r}.N001 {15} {r}.NC_06 {8} {16}
+<data>LOGIC_DTYPE {r}.XX1 {4} {9} {8} {r}.N001 {2} {3} {8} {16}
+LOGIC_DTYPE {r}.XX2 {5} {9} {8} {r}.N001 {7} {6} {8} {16}
+LOGIC_DTYPE {r}.XX3 {12} {9} {8} {r}.N001 {10} {11} {8} {16}
+LOGIC_DTYPE {r}.XX4 {13} {9} {8} {r}.N001 {15} {14} {8} {16}
 LOGIC_NOT {r}.XX9 {1} {r}.N001 {8} {16}
 </data>
 
-
+  
 <label pin="1" name="CLRb Input"/>
 <label pin="2" name="Q1 Output"/>
 <label pin="3" name="Q1b Output"/>
@@ -868,7 +1015,7 @@ LOGIC_NAND {r}.XX52 {15} {14} {r}.N006 {8} {16}
 LOGIC_NOR {r}.XX53 {11} {12} {r}.N001 {8} {16}
 LOGIC_NAND {r}.XX54 {11} {12} {r}.N005 {8} {16}
 </data>
-
+  
 <label pin="1" name="S2 Output"/>
 <label pin="2" name="B2 Input"/>
 <label pin="3" name="A2 Input"/>
