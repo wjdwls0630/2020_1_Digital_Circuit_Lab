@@ -54,38 +54,6 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 8 24 240 40)
-	(text "INPUT" (rect 189 0 230 11)(font "Arial" (font_size 6)))
-	(text "sel_0000[3..0]" (rect 5 0 137 12)(font "Liberation Sans" ))
-	(pt 232 8)
-	(drawing
-		(line (pt 148 12)(pt 173 12))
-		(line (pt 148 4)(pt 173 4))
-		(line (pt 177 8)(pt 232 8))
-		(line (pt 148 12)(pt 148 4))
-		(line (pt 173 4)(pt 177 8))
-		(line (pt 173 12)(pt 177 8))
-	)
-	(text "VCC" (rect 192 7 216 18)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 8 -8 240 8)
-	(text "INPUT" (rect 189 0 230 11)(font "Arial" (font_size 6)))
-	(text "sel_0110[3..0]" (rect 5 0 137 12)(font "Liberation Sans" ))
-	(pt 232 8)
-	(drawing
-		(line (pt 148 12)(pt 173 12))
-		(line (pt 148 4)(pt 173 4))
-		(line (pt 177 8)(pt 232 8))
-		(line (pt 148 12)(pt 148 4))
-		(line (pt 173 4)(pt 177 8))
-		(line (pt 173 12)(pt 177 8))
-	)
-	(text "VCC" (rect 192 7 216 18)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 64 128 232 144)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
 	(text "EQUAL" (rect 5 0 52 12)(font "Liberation Sans" ))
@@ -104,7 +72,7 @@ agreement for further details.
 	(input)
 	(rect 56 160 232 176)
 	(text "INPUT" (rect 133 0 174 11)(font "Arial" (font_size 6)))
-	(text "Addn_Sub" (rect 5 0 81 12)(font "Liberation Sans" ))
+	(text "Addn_Sub" (rect 5 0 80 12)(font "Liberation Sans" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -481,7 +449,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 928 328 992 368)
+	(rect 936 72 1000 112)
 	(text "7486" (rect 1 0 34 11)(font "Arial" (font_size 6)))
 	(text "inst16" (rect 3 29 59 41)(font "Liberation Sans" ))
 	(port
@@ -519,7 +487,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 928 368 992 408)
+	(rect 936 112 1000 152)
 	(text "7486" (rect 1 0 34 11)(font "Arial" (font_size 6)))
 	(text "inst17" (rect 3 29 59 41)(font "Liberation Sans" ))
 	(port
@@ -557,7 +525,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 928 408 992 448)
+	(rect 936 152 1000 192)
 	(text "7486" (rect 1 0 34 11)(font "Arial" (font_size 6)))
 	(text "inst18" (rect 3 29 59 41)(font "Liberation Sans" ))
 	(port
@@ -595,7 +563,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 928 448 992 488)
+	(rect 936 192 1000 232)
 	(text "7486" (rect 1 0 34 11)(font "Arial" (font_size 6)))
 	(text "inst19" (rect 3 29 59 41)(font "Liberation Sans" ))
 	(port
@@ -733,7 +701,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 1040 224 1240 320)
+	(rect 1024 336 1224 432)
 	(text "ttl74283" (rect 5 0 89 15)(font "Liberation Sans" (font_size 8)))
 	(text "inst24" (rect 8 80 64 92)(font "Liberation Sans" ))
 	(port
@@ -1895,6 +1863,138 @@ agreement for further details.
 		(circle (rect 8 164 16 172))
 	)
 )
+(symbol
+	(rect 1192 8 1224 24)
+	(text "VCC" (rect 7 0 31 11)(font "Arial" (font_size 6)))
+	(text "inst5" (rect 3 5 50 17)(font "Liberation Sans" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 26 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 26 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1032 24 1064 56)
+	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
+	(text "inst6" (rect 3 21 50 33)(font "Liberation Sans" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1080 8 1112 24)
+	(text "VCC" (rect 7 0 31 11)(font "Arial" (font_size 6)))
+	(text "inst6" (rect 3 5 50 17)(font "Liberation Sans" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 26 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 26 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1344 24 1376 56)
+	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
+	(text "inst9" (rect 3 21 50 33)(font "Liberation Sans" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1112 88 1144 120)
+	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
+	(text "inst10" (rect 3 21 59 33)(font "Liberation Sans" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1224 80 1256 112)
+	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
+	(text "inst11" (rect 3 21 59 33)(font "Liberation Sans" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1336 80 1368 112)
+	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
+	(text "inst14" (rect 3 21 59 33)(font "Liberation Sans" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1448 72 1480 104)
+	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
+	(text "inst15" (rect 3 21 59 33)(font "Liberation Sans" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 25 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 216 464)
 	(pt 216 584)
@@ -2052,26 +2152,6 @@ agreement for further details.
 	(pt 720 208)
 )
 (connector
-	(text "w_A_reg[0]" (rect 864 144 958 156)(font "Liberation Sans" ))
-	(pt 864 160)
-	(pt 896 160)
-)
-(connector
-	(text "w_A_reg[1]" (rect 864 160 958 172)(font "Liberation Sans" ))
-	(pt 864 176)
-	(pt 896 176)
-)
-(connector
-	(text "w_A_reg[2]" (rect 864 176 958 188)(font "Liberation Sans" ))
-	(pt 864 192)
-	(pt 896 192)
-)
-(connector
-	(text "w_A_reg[3]" (rect 864 192 958 204)(font "Liberation Sans" ))
-	(pt 864 208)
-	(pt 896 208)
-)
-(connector
 	(pt 744 272)
 	(pt 696 272)
 )
@@ -2091,11 +2171,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 896 160)
-	(pt 896 176)
-	(bus)
-)
-(connector
 	(pt 896 176)
 	(pt 896 192)
 	(bus)
@@ -2110,167 +2185,6 @@ agreement for further details.
 	(pt 656 160)
 	(pt 720 160)
 	(bus)
-)
-(connector
-	(pt 888 384)
-	(pt 928 384)
-)
-(connector
-	(pt 880 424)
-	(pt 928 424)
-)
-(connector
-	(pt 872 464)
-	(pt 928 464)
-)
-(connector
-	(pt 928 360)
-	(pt 904 360)
-)
-(connector
-	(pt 928 400)
-	(pt 904 400)
-)
-(connector
-	(pt 904 360)
-	(pt 904 400)
-)
-(connector
-	(pt 928 440)
-	(pt 904 440)
-)
-(connector
-	(pt 904 400)
-	(pt 904 440)
-)
-(connector
-	(pt 928 480)
-	(pt 904 480)
-)
-(connector
-	(pt 904 440)
-	(pt 904 480)
-)
-(connector
-	(pt 896 208)
-	(pt 896 256)
-	(bus)
-)
-(connector
-	(pt 896 256)
-	(pt 896 312)
-	(bus)
-)
-(connector
-	(pt 896 256)
-	(pt 1040 256)
-	(bus)
-)
-(connector
-	(pt 1032 288)
-	(pt 1040 288)
-)
-(connector
-	(text "w_B_in_1[0]" (rect 992 336 1095 348)(font "Liberation Sans" ))
-	(pt 992 352)
-	(pt 1008 352)
-)
-(connector
-	(text "w_B_in_1[1]" (rect 992 376 1095 388)(font "Liberation Sans" ))
-	(pt 992 392)
-	(pt 1008 392)
-)
-(connector
-	(text "w_B_in_1[2]" (rect 992 416 1095 428)(font "Liberation Sans" ))
-	(pt 992 432)
-	(pt 1008 432)
-)
-(connector
-	(text "w_B_in_1[3]" (rect 992 456 1095 468)(font "Liberation Sans" ))
-	(pt 992 472)
-	(pt 1008 472)
-)
-(connector
-	(pt 1008 352)
-	(pt 1008 272)
-	(bus)
-)
-(connector
-	(pt 1008 392)
-	(pt 1008 352)
-	(bus)
-)
-(connector
-	(pt 1008 472)
-	(pt 1008 432)
-	(bus)
-)
-(connector
-	(pt 1008 432)
-	(pt 1008 392)
-	(bus)
-)
-(connector
-	(text "w_B_in_1[3..0]" (rect 1008 256 1140 268)(font "Liberation Sans" ))
-	(pt 1008 272)
-	(pt 1040 272)
-	(bus)
-)
-(connector
-	(pt 928 344)
-	(pt 872 344)
-)
-(connector
-	(text "w_A_reg[0]" (rect 720 336 814 348)(font "Liberation Sans" ))
-	(pt 720 352)
-	(pt 744 352)
-)
-(connector
-	(pt 872 344)
-	(pt 872 352)
-)
-(connector
-	(pt 872 352)
-	(pt 864 352)
-)
-(connector
-	(text "w_A_reg[1]" (rect 720 352 814 364)(font "Liberation Sans" ))
-	(pt 720 368)
-	(pt 744 368)
-)
-(connector
-	(text "w_A_reg[2]" (rect 720 368 814 380)(font "Liberation Sans" ))
-	(pt 720 384)
-	(pt 744 384)
-)
-(connector
-	(text "w_A_reg[3]" (rect 720 384 814 396)(font "Liberation Sans" ))
-	(pt 720 400)
-	(pt 744 400)
-)
-(connector
-	(pt 888 368)
-	(pt 864 368)
-)
-(connector
-	(pt 888 384)
-	(pt 888 368)
-)
-(connector
-	(pt 880 384)
-	(pt 864 384)
-)
-(connector
-	(pt 880 424)
-	(pt 880 384)
-)
-(connector
-	(pt 872 400)
-	(pt 864 400)
-)
-(connector
-	(pt 872 464)
-	(pt 872 400)
 )
 (connector
 	(pt 720 312)
@@ -2295,18 +2209,6 @@ agreement for further details.
 (connector
 	(pt 696 464)
 	(pt 744 464)
-)
-(connector
-	(pt 1032 288)
-	(pt 1032 544)
-)
-(connector
-	(pt 904 544)
-	(pt 1032 544)
-)
-(connector
-	(pt 1032 544)
-	(pt 1072 544)
 )
 (connector
 	(pt 1304 288)
@@ -2420,14 +2322,6 @@ agreement for further details.
 	(pt 1272 432)
 )
 (connector
-	(pt 1272 432)
-	(pt 1272 272)
-)
-(connector
-	(pt 1240 272)
-	(pt 1272 272)
-)
-(connector
 	(pt 1272 272)
 	(pt 1320 272)
 )
@@ -2464,16 +2358,6 @@ agreement for further details.
 	(pt 1392 528)
 )
 (connector
-	(pt 1288 240)
-	(pt 1288 256)
-	(bus)
-)
-(connector
-	(pt 1288 256)
-	(pt 1288 376)
-	(bus)
-)
-(connector
 	(pt 1408 376)
 	(pt 1288 376)
 	(bus)
@@ -2491,12 +2375,6 @@ agreement for further details.
 (connector
 	(pt 1408 472)
 	(pt 1408 512)
-	(bus)
-)
-(connector
-	(text "w_S_1[3..0]" (rect 1240 240 1343 252)(font "Liberation Sans" ))
-	(pt 1240 256)
-	(pt 1288 256)
 	(bus)
 )
 (connector
@@ -3204,12 +3082,6 @@ agreement for further details.
 	(pt 2544 840)
 )
 (connector
-	(text "w_A_reg[3..0]" (rect 730 296 852 308)(font "Liberation Sans" ))
-	(pt 896 312)
-	(pt 720 312)
-	(bus)
-)
-(connector
 	(text "w_nand_A[1]" (rect 424 328 527 340)(font "Liberation Sans" ))
 	(pt 456 344)
 	(pt 424 344)
@@ -3231,17 +3103,358 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 904 736)
+	(text "w_B_reg[1]" (rect 864 160 958 172)(font "Liberation Sans" ))
+	(pt 864 176)
+	(pt 896 176)
+)
+(connector
+	(text "w_B_reg[2]" (rect 864 176 958 188)(font "Liberation Sans" ))
+	(pt 864 192)
+	(pt 896 192)
+)
+(connector
+	(text "w_B_reg[3..0]" (rect 730 296 852 308)(font "Liberation Sans" ))
+	(pt 896 312)
+	(pt 720 312)
+	(bus)
+)
+(connector
+	(text "w_B_reg[0]" (rect 720 336 814 348)(font "Liberation Sans" ))
+	(pt 720 352)
+	(pt 744 352)
+)
+(connector
+	(text "w_B_reg[1]" (rect 720 352 814 364)(font "Liberation Sans" ))
+	(pt 720 368)
+	(pt 744 368)
+)
+(connector
+	(text "w_B_reg[2]" (rect 720 368 814 380)(font "Liberation Sans" ))
+	(pt 720 384)
+	(pt 744 384)
+)
+(connector
+	(text "w_B_reg[3]" (rect 720 384 814 396)(font "Liberation Sans" ))
+	(pt 720 400)
+	(pt 744 400)
+)
+(connector
+	(pt 1288 240)
+	(pt 1288 368)
+	(bus)
+)
+(connector
+	(pt 1288 368)
+	(pt 1288 376)
+	(bus)
+)
+(connector
+	(pt 1272 272)
+	(pt 1272 384)
+)
+(connector
+	(pt 1272 384)
+	(pt 1272 432)
+)
+(connector
+	(text "w_S_1[3..0]" (rect 1224 352 1327 364)(font "Liberation Sans" ))
+	(pt 1224 368)
+	(pt 1288 368)
+	(bus)
+)
+(connector
+	(pt 1224 384)
+	(pt 1272 384)
+)
+(connector
+	(text "w_A_reg[0]" (rect 864 336 958 348)(font "Liberation Sans" ))
+	(pt 864 352)
+	(pt 896 352)
+)
+(connector
+	(text "w_A_reg[1]" (rect 864 352 958 364)(font "Liberation Sans" ))
+	(pt 864 368)
+	(pt 896 368)
+)
+(connector
+	(text "w_A_reg[2]" (rect 864 368 958 380)(font "Liberation Sans" ))
+	(pt 864 384)
+	(pt 896 384)
+)
+(connector
+	(text "w_A_reg[3]" (rect 864 384 958 396)(font "Liberation Sans" ))
+	(pt 864 400)
+	(pt 896 400)
+)
+(connector
+	(pt 896 352)
+	(pt 896 368)
+	(bus)
+)
+(connector
+	(pt 896 368)
+	(pt 896 384)
+	(bus)
+)
+(connector
+	(pt 896 384)
+	(pt 896 400)
+	(bus)
+)
+(connector
+	(text "w_A_reg[3..0]" (rect 904 352 1026 364)(font "Liberation Sans" ))
+	(pt 1024 368)
+	(pt 896 368)
+	(bus)
+)
+(connector
 	(pt 488 736)
+	(pt 928 736)
 )
 (connector
-	(pt 904 480)
-	(pt 904 544)
+	(text "Addn_Sub" (rect 545 701 557 776)(font "Liberation Sans" )(vertical))
+	(pt 928 544)
+	(pt 928 736)
 )
 (connector
-	(text "Addn_Sub" (rect 521 701 533 776)(font "Liberation Sans" )(vertical))
-	(pt 904 544)
-	(pt 904 736)
+	(pt 928 104)
+	(pt 936 104)
+)
+(connector
+	(pt 936 144)
+	(pt 928 144)
+)
+(connector
+	(pt 928 104)
+	(pt 928 144)
+)
+(connector
+	(pt 936 184)
+	(pt 928 184)
+)
+(connector
+	(pt 928 144)
+	(pt 928 184)
+)
+(connector
+	(pt 936 224)
+	(pt 928 224)
+)
+(connector
+	(pt 928 224)
+	(pt 928 544)
+)
+(connector
+	(pt 896 88)
+	(pt 896 160)
+)
+(connector
+	(pt 864 160)
+	(pt 896 160)
+)
+(connector
+	(text "w_B_reg[0]" (rect 864 144 958 156)(font "Liberation Sans" ))
+	(pt 896 160)
+	(pt 912 160)
+)
+(connector
+	(pt 912 160)
+	(pt 912 128)
+)
+(connector
+	(pt 896 160)
+	(pt 896 168)
+	(bus)
+)
+(connector
+	(pt 896 168)
+	(pt 896 176)
+	(bus)
+)
+(connector
+	(text "w_B_reg[0]" (rect 896 72 990 84)(font "Liberation Sans" ))
+	(pt 936 88)
+	(pt 896 88)
+)
+(connector
+	(text "w_B_reg[1]" (rect 912 112 1006 124)(font "Liberation Sans" ))
+	(pt 936 128)
+	(pt 912 128)
+)
+(connector
+	(text "w_B_reg[2]" (rect 896 152 990 164)(font "Liberation Sans" ))
+	(pt 936 168)
+	(pt 896 168)
+)
+(connector
+	(pt 928 208)
+	(pt 912 208)
+)
+(connector
+	(pt 928 184)
+	(pt 928 208)
+)
+(connector
+	(pt 928 208)
+	(pt 928 224)
+)
+(connector
+	(pt 912 224)
+	(pt 896 224)
+)
+(connector
+	(pt 896 208)
+	(pt 896 224)
+	(bus)
+)
+(connector
+	(pt 896 224)
+	(pt 896 312)
+	(bus)
+)
+(connector
+	(text "w_B_reg[3]" (rect 864 192 958 204)(font "Liberation Sans" ))
+	(pt 864 208)
+	(pt 896 208)
+)
+(connector
+	(text "w_B_reg[3]" (rect 896 134 908 228)(font "Liberation Sans" )(vertical))
+	(pt 912 208)
+	(pt 912 224)
+)
+(connector
+	(pt 1016 136)
+	(pt 1016 96)
+	(bus)
+)
+(connector
+	(pt 1016 176)
+	(pt 1016 136)
+	(bus)
+)
+(connector
+	(pt 1016 384)
+	(pt 1016 216)
+	(bus)
+)
+(connector
+	(pt 1016 216)
+	(pt 1016 176)
+	(bus)
+)
+(connector
+	(text "w_B_in_1[0]" (rect 1000 80 1103 92)(font "Liberation Sans" ))
+	(pt 1000 96)
+	(pt 1016 96)
+)
+(connector
+	(text "w_B_in_1[1]" (rect 1000 120 1103 132)(font "Liberation Sans" ))
+	(pt 1000 136)
+	(pt 1016 136)
+)
+(connector
+	(text "w_B_in_1[2]" (rect 1000 160 1103 172)(font "Liberation Sans" ))
+	(pt 1000 176)
+	(pt 1016 176)
+)
+(connector
+	(text "w_B_in_1[3]" (rect 1000 200 1103 212)(font "Liberation Sans" ))
+	(pt 1000 216)
+	(pt 1016 216)
+)
+(connector
+	(text "w_B_in_1[3..0]" (rect 1016 368 1148 380)(font "Liberation Sans" ))
+	(pt 1024 384)
+	(pt 1016 384)
+	(bus)
+)
+(connector
+	(pt 1024 400)
+	(pt 984 400)
+)
+(connector
+	(pt 984 400)
+	(pt 984 544)
+)
+(connector
+	(pt 1072 544)
+	(pt 984 544)
+)
+(connector
+	(pt 984 544)
+	(pt 928 544)
+)
+(connector
+	(pt 1096 24)
+	(pt 1096 32)
+)
+(connector
+	(pt 1208 24)
+	(pt 1208 32)
+)
+(connector
+	(pt 1048 24)
+	(pt 1048 16)
+)
+(connector
+	(pt 1360 24)
+	(pt 1360 16)
+)
+(connector
+	(text "sel_0110[0]" (rect 984 0 1087 12)(font "Liberation Sans" ))
+	(pt 1048 16)
+	(pt 984 16)
+)
+(connector
+	(text "sel_0110[1]" (rect 1096 16 1199 28)(font "Liberation Sans" ))
+	(pt 1096 32)
+	(pt 1168 32)
+)
+(connector
+	(text "sel_0110[2]" (rect 1208 16 1311 28)(font "Liberation Sans" ))
+	(pt 1208 32)
+	(pt 1280 32)
+)
+(connector
+	(text "sel_0110[3]" (rect 1296 0 1399 12)(font "Liberation Sans" ))
+	(pt 1360 16)
+	(pt 1296 16)
+)
+(connector
+	(pt 1128 88)
+	(pt 1128 80)
+)
+(connector
+	(pt 1240 80)
+	(pt 1240 72)
+)
+(connector
+	(pt 1352 80)
+	(pt 1352 72)
+)
+(connector
+	(pt 1464 72)
+	(pt 1464 64)
+)
+(connector
+	(text "sel_0000[0]" (rect 1064 64 1167 76)(font "Liberation Sans" ))
+	(pt 1128 80)
+	(pt 1064 80)
+)
+(connector
+	(text "sel_0000[1]" (rect 1176 56 1279 68)(font "Liberation Sans" ))
+	(pt 1240 72)
+	(pt 1176 72)
+)
+(connector
+	(text "sel_0000[2]" (rect 1288 56 1391 68)(font "Liberation Sans" ))
+	(pt 1352 72)
+	(pt 1288 72)
+)
+(connector
+	(text "sel_0000[3]" (rect 1400 48 1503 60)(font "Liberation Sans" ))
+	(pt 1464 64)
+	(pt 1400 64)
 )
 (junction (pt 216 224))
 (junction (pt 216 344))
@@ -3258,19 +3471,10 @@ agreement for further details.
 (junction (pt 896 176))
 (junction (pt 896 192))
 (junction (pt 896 208))
-(junction (pt 904 400))
-(junction (pt 904 440))
-(junction (pt 904 480))
-(junction (pt 896 256))
-(junction (pt 904 544))
-(junction (pt 1008 352))
-(junction (pt 1008 392))
-(junction (pt 1008 432))
 (junction (pt 720 352))
 (junction (pt 720 368))
 (junction (pt 720 384))
 (junction (pt 696 464))
-(junction (pt 1032 544))
 (junction (pt 1304 288))
 (junction (pt 1304 248))
 (junction (pt 1288 200))
@@ -3278,11 +3482,9 @@ agreement for further details.
 (junction (pt 1288 240))
 (junction (pt 1400 240))
 (junction (pt 1304 448))
-(junction (pt 1272 272))
 (junction (pt 1392 568))
 (junction (pt 1392 528))
 (junction (pt 1392 488))
-(junction (pt 1288 256))
 (junction (pt 1408 552))
 (junction (pt 1408 512))
 (junction (pt 1408 472))
@@ -3312,3 +3514,19 @@ agreement for further details.
 (junction (pt 2536 576))
 (junction (pt 2536 592))
 (junction (pt 2536 608))
+(junction (pt 1288 368))
+(junction (pt 1272 384))
+(junction (pt 896 368))
+(junction (pt 896 384))
+(junction (pt 928 544))
+(junction (pt 928 144))
+(junction (pt 928 184))
+(junction (pt 928 224))
+(junction (pt 896 160))
+(junction (pt 896 168))
+(junction (pt 928 208))
+(junction (pt 896 224))
+(junction (pt 1016 136))
+(junction (pt 1016 176))
+(junction (pt 1016 216))
+(junction (pt 984 544))
