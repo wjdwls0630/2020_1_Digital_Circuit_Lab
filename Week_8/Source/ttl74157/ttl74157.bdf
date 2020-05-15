@@ -1,0 +1,344 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 224 64 392 80)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "A[4..1]" (rect 5 0 71 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 232 88 400 104)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "B[4..1]" (rect 5 0 71 12)(font "Liberation Sans" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 232 120 400 136)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "SEL" (rect 5 0 33 12)(font "Liberation Sans" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 696 104 872 120)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "Y[4..1]" (rect 90 0 156 12)(font "Liberation Sans" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 520 232 640 424)
+	(text "74157" (rect 41 0 105 18)(font "Arial" (font_size 10)))
+	(text "inst" (rect 3 181 36 192)(font "Arial" (font_size 6)))
+	(port
+		(pt 0 40)
+		(input)
+		(text "A1" (rect 22 32 43 47)(font "Arial" (font_size 8)))
+		(text "A1" (rect 22 32 43 47)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "B1" (rect 22 48 43 63)(font "Arial" (font_size 8)))
+		(text "B1" (rect 22 48 43 63)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "SEL" (rect 21 17 52 32)(font "Arial" (font_size 8)))
+		(text "SEL" (rect 21 17 52 32)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "B2" (rect 22 80 43 95)(font "Arial" (font_size 8)))
+		(text "B2" (rect 22 80 43 95)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "A3" (rect 22 96 43 111)(font "Arial" (font_size 8)))
+		(text "A3" (rect 22 96 43 111)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "B3" (rect 22 112 43 127)(font "Arial" (font_size 8)))
+		(text "B3" (rect 22 112 43 127)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 16 120))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "A2" (rect 22 64 43 79)(font "Arial" (font_size 8)))
+		(text "A2" (rect 22 64 43 79)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "B4" (rect 22 144 43 159)(font "Arial" (font_size 8)))
+		(text "B4" (rect 22 144 43 159)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 16 152))
+	)
+	(port
+		(pt 0 168)
+		(input)
+		(text "GN" (rect 22 160 43 175)(font "Arial" (font_size 8)))
+		(text "GN" (rect 22 160 43 175)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 8 168))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "A4" (rect 22 128 43 143)(font "Arial" (font_size 8)))
+		(text "A4" (rect 22 128 43 143)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 16 136))
+	)
+	(port
+		(pt 120 88)
+		(output)
+		(text "Y2" (rect 86 82 107 97)(font "Arial" (font_size 8)))
+		(text "Y2" (rect 82 82 103 97)(font "Arial" (font_size 8)))
+		(line (pt 104 88)(pt 120 88))
+	)
+	(port
+		(pt 120 72)
+		(output)
+		(text "Y1" (rect 86 66 107 81)(font "Arial" (font_size 8)))
+		(text "Y1" (rect 82 66 103 81)(font "Arial" (font_size 8)))
+		(line (pt 104 72)(pt 120 72))
+	)
+	(port
+		(pt 120 120)
+		(output)
+		(text "Y4" (rect 86 114 107 129)(font "Arial" (font_size 8)))
+		(text "Y4" (rect 82 114 103 129)(font "Arial" (font_size 8)))
+		(line (pt 104 120)(pt 120 120))
+	)
+	(port
+		(pt 120 104)
+		(output)
+		(text "Y3" (rect 86 98 107 113)(font "Arial" (font_size 8)))
+		(text "Y3" (rect 82 98 103 113)(font "Arial" (font_size 8)))
+		(line (pt 104 104)(pt 120 104))
+	)
+	(drawing
+		(text "MULTIPLEXER" (rect 29 177 145 192)(font "Arial" (font_size 8)))
+		(line (pt 16 176)(pt 16 16))
+		(line (pt 104 176)(pt 104 16))
+		(line (pt 16 16)(pt 104 16))
+		(line (pt 16 176)(pt 104 176))
+		(circle (rect 8 164 16 172))
+	)
+)
+(connector
+	(pt 320 272)
+	(pt 320 248)
+	(bus)
+)
+(connector
+	(pt 320 304)
+	(pt 320 272)
+	(bus)
+)
+(connector
+	(pt 320 368)
+	(pt 320 336)
+	(bus)
+)
+(connector
+	(pt 320 336)
+	(pt 320 304)
+	(bus)
+)
+(connector
+	(text "A[4..1]" (rect 210 232 276 244)(font "Liberation Sans" ))
+	(pt 320 248)
+	(pt 200 248)
+	(bus)
+)
+(connector
+	(text "A[1]" (rect 330 256 367 268)(font "Liberation Sans" ))
+	(pt 320 272)
+	(pt 520 272)
+)
+(connector
+	(text "A[2]" (rect 330 288 367 300)(font "Liberation Sans" ))
+	(pt 320 304)
+	(pt 520 304)
+)
+(connector
+	(text "A[3]" (rect 330 320 367 332)(font "Liberation Sans" ))
+	(pt 320 336)
+	(pt 520 336)
+)
+(connector
+	(text "A[4]" (rect 330 352 367 364)(font "Liberation Sans" ))
+	(pt 320 368)
+	(pt 520 368)
+)
+(connector
+	(pt 384 288)
+	(pt 384 320)
+	(bus)
+)
+(connector
+	(pt 384 320)
+	(pt 384 352)
+	(bus)
+)
+(connector
+	(pt 384 352)
+	(pt 384 384)
+	(bus)
+)
+(connector
+	(text "B[4..1]" (rect 210 368 276 380)(font "Liberation Sans" ))
+	(pt 384 384)
+	(pt 200 384)
+	(bus)
+)
+(connector
+	(text "B[4]" (rect 394 368 431 380)(font "Liberation Sans" ))
+	(pt 384 384)
+	(pt 520 384)
+)
+(connector
+	(text "B[3]" (rect 394 336 431 348)(font "Liberation Sans" ))
+	(pt 384 352)
+	(pt 520 352)
+)
+(connector
+	(text "B[2]" (rect 394 304 431 316)(font "Liberation Sans" ))
+	(pt 384 320)
+	(pt 520 320)
+)
+(connector
+	(text "B[1]" (rect 394 272 431 284)(font "Liberation Sans" ))
+	(pt 384 288)
+	(pt 520 288)
+)
+(connector
+	(text "SEL" (rect 394 240 422 252)(font "Liberation Sans" ))
+	(pt 520 256)
+	(pt 384 256)
+)
+(connector
+	(pt 776 304)
+	(pt 776 240)
+	(bus)
+)
+(connector
+	(pt 776 320)
+	(pt 776 304)
+	(bus)
+)
+(connector
+	(pt 776 352)
+	(pt 776 336)
+	(bus)
+)
+(connector
+	(pt 776 336)
+	(pt 776 320)
+	(bus)
+)
+(connector
+	(text "Y[4..1]" (rect 786 224 852 236)(font "Liberation Sans" ))
+	(pt 776 240)
+	(pt 880 240)
+	(bus)
+)
+(connector
+	(text "Y[1]" (rect 650 288 687 300)(font "Liberation Sans" ))
+	(pt 640 304)
+	(pt 776 304)
+)
+(connector
+	(text "Y[2]" (rect 650 304 687 316)(font "Liberation Sans" ))
+	(pt 640 320)
+	(pt 776 320)
+)
+(connector
+	(text "Y[3]" (rect 650 320 687 332)(font "Liberation Sans" ))
+	(pt 640 336)
+	(pt 776 336)
+)
+(connector
+	(text "Y[4]" (rect 650 336 687 348)(font "Liberation Sans" ))
+	(pt 640 352)
+	(pt 776 352)
+)
+(junction (pt 320 272))
+(junction (pt 320 304))
+(junction (pt 320 336))
+(junction (pt 384 384))
+(junction (pt 384 320))
+(junction (pt 384 352))
+(junction (pt 776 304))
+(junction (pt 776 320))
+(junction (pt 776 336))

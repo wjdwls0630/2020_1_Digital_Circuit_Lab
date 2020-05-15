@@ -1,0 +1,8 @@
+module and_3in_v (
+  input A[2:0],
+  output Z
+  );
+
+  and(Z, A[2], A[1], A[0]);
+
+endmodule //and_3in_v

@@ -58,21 +58,54 @@ module top_v (
     .Z(w_A[3])
     );
 
-  wire [5:0] w_B_reg;
-  wire [5:0] w_A_reg;
+  wire [5:0] w_C_1_reg;
+  wire [5:0] w_C_10_reg;
+  wire [5:0] w_B_1_reg;
+  wire [5:0] w_B_10_reg;
+  wire [5:0] w_A_1_reg;
+  wire [5:0] w_A_10_reg;
   ttl74174_v ttl74174_v_1(
     .D({2'b0, w_A[3:0]}),
-    .Q(w_B_reg),
+    .Q(w_C_1_reg),
     .CLK(w_click),
     .CLRb(START)
     );
 
   ttl74174_v ttl74174_v_2(
-    .D({2'b0, w_B_reg[3:0]}),
-    .Q(w_A_reg),
+    .D({2'b0, w_C_1_reg[3:0]}),
+    .Q(w_C_10_reg),
     .CLK(w_click),
     .CLRb(START)
     );
+
+  ttl74174_v ttl74174_v_3(
+    .D({2'b0, w_C_10_reg[3:0]}),
+    .Q(w_B_1_reg),
+    .CLK(w_click),
+    .CLRb(START)
+    );
+
+  ttl74174_v ttl74174_v_4(
+    .D({2'b0, w_B_1_reg[3:0]}),
+    .Q(w_B_10_reg),
+    .CLK(w_click),
+    .CLRb(START)
+    );
+
+  ttl74174_v ttl74174_v_5(
+    .D({2'b0, w_B_10_reg[3:0]}),
+    .Q(w_A_1_reg),
+    .CLK(w_click),
+    .CLRb(START)
+    );
+
+  ttl74174_v ttl74174_v_6(
+    .D({2'b0, w_A_1_reg[3:0]}),
+    .Q(w_A_10_reg),
+    .CLK(w_click),
+    .CLRb(START)
+    );
+
 
   // Addn_Sub = 1'b0 <= add
   // Addn_Sub = 1'b1 <= sub
@@ -198,7 +231,7 @@ module top_v (
     );
 
   wire [5:0] w_result;
-  ttl74174_v ttl74174_v_3(
+  ttl74174_v ttl74174_v_7(
     .D({1'b0, w_cout, w_S_2}),
     .Q(w_result),
     .CLK(w_show),
