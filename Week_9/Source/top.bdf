@@ -1,0 +1,233 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 88 64 272 80)
+	(text "INPUT" (rect 141 0 182 11)(font "Arial" (font_size 6)))
+	(text "i_A[3..0]" (rect 5 0 90 12)(font "Arial" ))
+	(pt 184 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12))
+		(line (pt 100 4)(pt 125 4))
+		(line (pt 129 8)(pt 184 8))
+		(line (pt 100 12)(pt 100 4))
+		(line (pt 125 4)(pt 129 8))
+		(line (pt 125 12)(pt 129 8))
+	)
+	(text "VCC" (rect 144 7 168 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 112 104 280 120)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "i_CLK" (rect 5 0 53 12)(font "Liberation Sans" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 120 136 288 152)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "i_RWN" (rect 5 0 53 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 376 64 566 80)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "w_q[14..0]" (rect 90 0 184 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 384 96 560 112)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "o_Q" (rect 90 0 118 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 384 224 600 352)
+	(text "Morse_Rom" (rect 72 0 188 18)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 112 45 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "address[3..0]" (rect 0 0 138 15)(font "Arial" (font_size 8)))
+		(text "address[3..0]" (rect 4 19 142 34)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 88 32)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "clock" (rect 0 0 53 15)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 99 57 114)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 144 112))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "q[14..0]" (rect 0 0 84 15)(font "Arial" (font_size 8)))
+		(text "q[14..0]" (rect 177 19 261 34)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 160 32)(line_width 3))
+	)
+	(drawing
+		(text "15 bits" (rect 110 18 122 84)(font "Arial" )(vertical))
+		(text "16 words" (rect 120 10 132 85)(font "Arial" )(vertical))
+		(text "Block type: AUTO" (rect 48 115 199 127)(font "Arial" ))
+		(line (pt 104 24)(pt 136 24))
+		(line (pt 136 24)(pt 136 96))
+		(line (pt 136 96)(pt 104 96))
+		(line (pt 104 96)(pt 104 24))
+		(line (pt 118 58)(pt 123 63))
+		(line (pt 118 62)(pt 123 57))
+		(line (pt 152 27)(pt 160 27))
+		(line (pt 160 27)(pt 160 39))
+		(line (pt 160 39)(pt 152 39))
+		(line (pt 152 39)(pt 152 27))
+		(line (pt 152 34)(pt 154 36))
+		(line (pt 154 36)(pt 152 38))
+		(line (pt 144 36)(pt 152 36))
+		(line (pt 136 32)(pt 152 32)(line_width 3))
+		(line (pt 88 27)(pt 96 27))
+		(line (pt 96 27)(pt 96 39))
+		(line (pt 96 39)(pt 88 39))
+		(line (pt 88 39)(pt 88 27))
+		(line (pt 88 34)(pt 90 36))
+		(line (pt 90 36)(pt 88 38))
+		(line (pt 80 36)(pt 88 36))
+		(line (pt 96 32)(pt 104 32)(line_width 3))
+		(line (pt 80 112)(pt 80 36))
+		(line (pt 144 112)(pt 144 36))
+		(line (pt 0 0)(pt 217 0))
+		(line (pt 217 0)(pt 217 130))
+		(line (pt 0 130)(pt 217 130))
+		(line (pt 0 0)(pt 0 130))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+	)
+)
+(symbol
+	(rect 800 192 968 288)
+	(text "ttl74674" (rect 5 0 89 15)(font "Liberation Sans" (font_size 8)))
+	(text "inst1" (rect 8 80 55 92)(font "Liberation Sans" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "i_CLK" (rect 0 0 53 15)(font "Liberation Sans" (font_size 8)))
+		(text "i_CLK" (rect 21 27 74 42)(font "Liberation Sans" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "i_RWN" (rect 0 0 53 15)(font "Liberation Sans" (font_size 8)))
+		(text "i_RWN" (rect 21 43 74 58)(font "Liberation Sans" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "P[14..0]" (rect 0 0 84 15)(font "Liberation Sans" (font_size 8)))
+		(text "P[14..0]" (rect 21 59 105 74)(font "Liberation Sans" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "o_Q" (rect 0 0 31 15)(font "Liberation Sans" (font_size 8)))
+		(text "o_Q" (rect 116 27 147 42)(font "Liberation Sans" (font_size 8)))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 80))
+	)
+)
+(connector
+	(text "i_CLK" (rect 290 320 337 332)(font "Liberation Sans" ))
+	(pt 384 336)
+	(pt 280 336)
+)
+(connector
+	(text "i_A[3..0]" (rect 290 240 374 252)(font "Liberation Sans" ))
+	(pt 384 256)
+	(pt 280 256)
+	(bus)
+)
+(connector
+	(text "w_q[14..0]" (rect 610 240 704 252)(font "Liberation Sans" ))
+	(pt 600 256)
+	(pt 800 256)
+	(bus)
+)
+(connector
+	(text "i_CLK" (rect 722 208 769 220)(font "Liberation Sans" ))
+	(pt 800 224)
+	(pt 712 224)
+)
+(connector
+	(text "o_Q" (rect 978 208 1006 220)(font "Liberation Sans" ))
+	(pt 968 224)
+	(pt 1064 224)
+)
+(connector
+	(text "i_RWN" (rect 722 224 769 236)(font "Liberation Sans" ))
+	(pt 800 240)
+	(pt 712 240)
+)
