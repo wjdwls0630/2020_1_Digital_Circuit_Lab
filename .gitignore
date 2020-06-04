@@ -4,7 +4,6 @@ db
 output_files
 simulation
 *.qws
-*.qsf
 *.rpt
 ./OpenXLSX
 ./idea
