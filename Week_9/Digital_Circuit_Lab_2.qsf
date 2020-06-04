@@ -59,14 +59,11 @@ set_global_assignment -name BDF_FILE Source/ttl7448/ttl7448.bdf
 set_global_assignment -name BDF_FILE Source/Primitive/or_2in.bdf
 set_global_assignment -name BDF_FILE Source/Primitive/or_3in.bdf
 set_global_assignment -name BDF_FILE Source/Primitive/or_4in.bdf
-set_global_assignment -name BDF_FILE Source/counter_14/counter_14.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Source/counter_15/counter_15_tb.vwf
 set_global_assignment -name BDF_FILE Source/counter_15/counter_15.bdf
 set_global_assignment -name QIP_FILE Source/Morse_Rom/Morse_Rom.qip
 set_global_assignment -name BDF_FILE Source/ttl74674/ttl74674.bdf
 set_global_assignment -name BDF_FILE Source/top.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Source/tob_tb.vwf
 set_global_assignment -name BDF_FILE Source/ttl74673/ttl74673.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Source/ttl74673/ttl74673_tb.vwf
 set_global_assignment -name BDF_FILE Source/quad_dff_skip/quad_dff_skip.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
