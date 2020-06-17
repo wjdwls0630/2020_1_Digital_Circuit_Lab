@@ -1,0 +1,15 @@
+module dff_v (
+  input i_D,
+  output reg o_Q,
+  output o_Qn,
+  input i_CLK,
+  input i_RSTN
+  );
+
+  assign o_Qn = ~o_Q;
+  always @ ( posedge i_CLK, negedge i_RSTN) begin
+    if(!i_RSTN) o_Q <= 1'b0;
+    else o_Q <= i_D;
+  end
+
+endmodule //ttl7474

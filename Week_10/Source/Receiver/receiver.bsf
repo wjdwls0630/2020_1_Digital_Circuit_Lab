@@ -1,0 +1,107 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 296 208)
+	(text "receiver" (rect 5 0 89 15)(font "Liberation Sans" (font_size 8)))
+	(text "inst" (rect 8 176 45 188)(font "Liberation Sans" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "i_Q" (rect 0 0 31 15)(font "Liberation Sans" (font_size 8)))
+		(text "i_Q" (rect 21 27 52 42)(font "Liberation Sans" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "i_CLK" (rect 0 0 53 15)(font "Liberation Sans" (font_size 8)))
+		(text "i_CLK" (rect 21 43 74 58)(font "Liberation Sans" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "i_RSTN" (rect 0 0 63 15)(font "Liberation Sans" (font_size 8)))
+		(text "i_RSTN" (rect 21 59 84 74)(font "Liberation Sans" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 280 32)
+		(output)
+		(text "w_1e3_BCD[3..0]" (rect 0 0 159 15)(font "Liberation Sans" (font_size 8)))
+		(text "w_1e3_BCD[3..0]" (rect 100 27 259 42)(font "Liberation Sans" (font_size 8)))
+		(line (pt 280 32)(pt 264 32)(line_width 3))
+	)
+	(port
+		(pt 280 48)
+		(output)
+		(text "w_1e2_BCD[3..0]" (rect 0 0 159 15)(font "Liberation Sans" (font_size 8)))
+		(text "w_1e2_BCD[3..0]" (rect 100 43 259 58)(font "Liberation Sans" (font_size 8)))
+		(line (pt 280 48)(pt 264 48)(line_width 3))
+	)
+	(port
+		(pt 280 64)
+		(output)
+		(text "w_1e1_BCD[3..0]" (rect 0 0 159 15)(font "Liberation Sans" (font_size 8)))
+		(text "w_1e1_BCD[3..0]" (rect 100 59 259 74)(font "Liberation Sans" (font_size 8)))
+		(line (pt 280 64)(pt 264 64)(line_width 3))
+	)
+	(port
+		(pt 280 80)
+		(output)
+		(text "w_1e0_BCD[3..0]" (rect 0 0 159 15)(font "Liberation Sans" (font_size 8)))
+		(text "w_1e0_BCD[3..0]" (rect 100 75 259 90)(font "Liberation Sans" (font_size 8)))
+		(line (pt 280 80)(pt 264 80)(line_width 3))
+	)
+	(port
+		(pt 280 96)
+		(output)
+		(text "o_1e0_SEG[6..0]" (rect 0 0 159 15)(font "Liberation Sans" (font_size 8)))
+		(text "o_1e0_SEG[6..0]" (rect 100 91 259 106)(font "Liberation Sans" (font_size 8)))
+		(line (pt 280 96)(pt 264 96)(line_width 3))
+	)
+	(port
+		(pt 280 112)
+		(output)
+		(text "o_1e1_SEG[6..0]" (rect 0 0 159 15)(font "Liberation Sans" (font_size 8)))
+		(text "o_1e1_SEG[6..0]" (rect 100 107 259 122)(font "Liberation Sans" (font_size 8)))
+		(line (pt 280 112)(pt 264 112)(line_width 3))
+	)
+	(port
+		(pt 280 128)
+		(output)
+		(text "o_1e2_SEG[6..0]" (rect 0 0 159 15)(font "Liberation Sans" (font_size 8)))
+		(text "o_1e2_SEG[6..0]" (rect 100 123 259 138)(font "Liberation Sans" (font_size 8)))
+		(line (pt 280 128)(pt 264 128)(line_width 3))
+	)
+	(port
+		(pt 280 144)
+		(output)
+		(text "o_1e3_SEG[6..0]" (rect 0 0 159 15)(font "Liberation Sans" (font_size 8)))
+		(text "o_1e3_SEG[6..0]" (rect 100 139 259 154)(font "Liberation Sans" (font_size 8)))
+		(line (pt 280 144)(pt 264 144)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 264 176))
+	)
+)
